@@ -19,15 +19,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>我的文章</title>
-    <url>/blog/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>这是我的博客。<br>今天天气很不错！</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hexo文章的引用</title>
     <url>/blog/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
@@ -70,6 +61,15 @@
         <tag>引用</tag>
         <tag>代码块</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的文章</title>
+    <url>/blog/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>这是我的博客。<br>今天天气很不错！</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
   </entry>
   <entry>
     <title>hexo标签云</title>
