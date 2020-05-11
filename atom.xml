@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Oiの博客</title>
+  <title>唐宝の博客</title>
   <icon>http://yoursite.com/icon.png</icon>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-11T08:48:33.358Z</updated>
+  <updated>2020-05-11T09:27:42.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Dear Oi</name>
+    <name>唐宝</name>
     
   </author>
   
@@ -21,18 +21,11 @@
     <link href="http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/"/>
     <id>http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</id>
     <published>2020-05-10T10:12:57.000Z</published>
-    <updated>2020-05-11T08:48:33.358Z</updated>
+    <updated>2020-05-11T09:27:42.686Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/tagscloud.png&quot;
-        
-      
+      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/tagscloud.png&quot; alt=&quot;TagCloud&quot;&gt;&lt;/p&gt;
     
     </summary>
     
