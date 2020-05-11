@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-11T09:27:42.686Z</updated>
+  <updated>2020-05-11T15:23:25.310Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,15 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo 主题设置</title>
+    <link href="http://yoursite.com/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</id>
+    <published>2020-05-11T14:29:43.000Z</published>
+    <updated>2020-05-11T15:23:25.310Z</updated>
+    
+    <summary type="html">
+    
+      默认首页会显示全文，这里设置只显示摘要。
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="主题设置" scheme="http://yoursite.com/tags/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo标签云</title>
     <link href="http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/"/>
     <id>http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</id>
     <published>2020-05-10T10:12:57.000Z</published>
-    <updated>2020-05-11T09:27:42.686Z</updated>
+    <updated>2020-05-11T14:18:19.425Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/tagscloud.png&quot; alt=&quot;TagCloud&quot;&gt;&lt;/p&gt;
+      实现博客右下角的标签云
     
     </summary>
     
@@ -44,19 +67,11 @@
     <link href="http://yoursite.com/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</id>
     <published>2020-05-10T08:01:18.000Z</published>
-    <updated>2020-05-11T08:48:46.708Z</updated>
+    <updated>2020-05-11T14:20:17.482Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。&lt;/p&gt;
-&lt;h1 id=&quot;引用块&quot;&gt;&lt;a href=&quot;#引用块&quot; class=&quot;headerlink&quot;
-        
-      
+      标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。
     
     </summary>
     
@@ -77,18 +92,11 @@
     <link href="http://yoursite.com/2020/05/10/hello-world/"/>
     <id>http://yoursite.com/2020/05/10/hello-world/</id>
     <published>2020-05-10T00:04:34.145Z</published>
-    <updated>2020-05-11T08:49:19.359Z</updated>
+    <updated>2020-05-11T14:21:49.406Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -101,17 +109,11 @@
     <link href="http://yoursite.com/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</id>
     <published>2020-05-09T12:02:01.000Z</published>
-    <updated>2020-05-11T08:49:12.338Z</updated>
+    <updated>2020-05-11T13:58:22.924Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a
-        
-      
+      本文已加密
     
     </summary>
     

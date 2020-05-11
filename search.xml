@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2020/05/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <!-- more --></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo标签云</title>
     <url>/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
     <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagscloud.png" alt="TagCloud"></p>
-<a id="more"></a>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
 <li>进入到 hexo 的根目录，然后在 <code>package.json</code> 中添加依赖: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code></li>
 <li>然后执行 <code>npm install</code> 命令</li>
@@ -102,32 +120,48 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/05/10/hello-world/</url>
-    <content><![CDATA[<a id="more"></a>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <!-- more --></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>我的文章</title>
     <url>/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<a id="more"></a>
-<p>这是我的博客。<br>今天天气很不错！</p>
-]]></content>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">请输入密码</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="99a406a3e7d34a6589ef2f395e6919576cd1f107698926086f1d69c64428991b">061f5f5bec8341ff7bc815c843e718e2080c0b0d5495eaad18c2865ea87431294c676ee7b273f4eb46c9f448f9cfd5a2d3446f683990202cf976c7cd76bcda34d3b0a67d319f2cd52e7e04ecd5deaade</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>随笔</category>
       </categories>
+  </entry>
+  <entry>
+    <title>hexo 主题设置</title>
+    <url>/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="首页截断设置"><a href="#首页截断设置" class="headerlink" title="首页截断设置"></a>首页截断设置</h1><p>默认首页会显示全文，这里设置只显示摘要。<br>修改方法：在主题配置文件设置<code>excerpt_description: true</code>和<code>excerpt_description: true</code></p>
+<h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>在文章中需要截断的地方加上代码：<code>&lt;!-- more --&gt;</code></p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>在文章元信息中指定摘要：<code>description</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">- 分类</span><br><span class="line">tags:</span><br><span class="line">- 标签</span><br><span class="line">- 标签</span><br><span class="line">description: 摘要内容</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h1 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h1><p>由于平时没事也拍点东西，于是就想也有个展示的页面。探索了一下，可以利用 <code>next</code> 的插件 <code>group picture</code> 来实现，他的原理很简单，就是利用 <code>next</code> 主题的 <code>Tag Plugin</code> 这种语法提供了一种展示图片的布局。</p>
+<p>需要以下几步：</p>
+<ul>
+<li><p>首先 <code>hexo new page photos</code> 新建一个名为 <code>photos</code> 的标签页，并且在 <code>themes/next/languages/zh-CN.yml</code> 中的 <code>menu</code> 一项下面添加 <code>photos: 相册</code>，这样在首页菜单栏才会显示中文相册。</p>
+</li>
+<li><p>其次，可以直接在 <code>source/photos/index.md</code> 写文章，并在需要插入图片的时候用以下方式来组织你的图片列表：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">## 文字描述</span><br><span class="line">&#123;% gp 4-2 %&#125;</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+<p>其中 ‘4-2’ 的意思是改组一共有4张图片，每行排最多2张。</p>
+</li>
+<li><p>除了图片之外其他的文字和章节标题都可以像往常一样加。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>主题设置</tag>
+      </tags>
   </entry>
 </search>
