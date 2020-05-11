@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/blog/2020/05/10/hello-world/</url>
+    <url>/2020/05/10/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>hexo文章的引用</title>
-    <url>/blog/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
+    <url>/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
 <h1 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h1><p>在文章中插入引言，可包含作者、来源和标题。</p>
 <blockquote><p>content</p>
@@ -49,7 +49,7 @@
 
 <h3 id="反引号代码块"><a href="#反引号代码块" class="headerlink" title="反引号代码块"></a>反引号代码块</h3><p>另一种形式的代码块，不同的是它使用三个反引号来包裹。<br><code>[language] [title] [url] [link text] code snippet</code></p>
 <h1 id="引用图片和视频"><a href="#引用图片和视频" class="headerlink" title="引用图片和视频"></a>引用图片和视频</h1><h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><p>插入指定大小的图片。</p>
-<img src="/blog/path/to/image" class="[class names]" title="[width] [height] " alt="title text">
+<img src="/path/to/image" class="[class names]" title="[width] [height] " alt="title text">
 
 <h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p>在文章中插入 Youtube 视频。</p>
 <div class="video-container"><iframe src="https://www.youtube.com/embed/video_id" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content>
@@ -63,17 +63,8 @@
       </tags>
   </entry>
   <entry>
-    <title>我的文章</title>
-    <url>/blog/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>这是我的博客。<br>今天天气很不错！</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hexo标签云</title>
-    <url>/blog/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
+    <url>/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
     <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/blog/images/tagscloud.png" alt="TagCloud"></p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
 <li>进入到 hexo 的根目录，然后在 <code>package.json</code> 中添加依赖: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code></li>
@@ -124,5 +115,14 @@
         <tag>hexo</tag>
         <tag>标签云</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的文章</title>
+    <url>/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>这是我的博客。<br>今天天气很不错！</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
   </entry>
 </search>
