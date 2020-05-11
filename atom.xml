@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-11T03:06:31.317Z</updated>
+  <updated>2020-05-11T08:48:33.358Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,21 +21,18 @@
     <link href="http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/"/>
     <id>http://yoursite.com/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</id>
     <published>2020-05-10T10:12:57.000Z</published>
-    <updated>2020-05-11T03:06:31.317Z</updated>
+    <updated>2020-05-11T08:48:33.358Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/tagscloud.png&quot; alt=&quot;TagCloud&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;如何使用&quot;&gt;&lt;a href=&quot;#如何使用&quot; class=&quot;headerlink&quot; title=&quot;如何使用&quot;&gt;&lt;/a&gt;如何使用&lt;/h2&gt;&lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;进入到 hexo 的根目录，然后在 &lt;code&gt;package.json&lt;/code&gt; 中添加依赖: &lt;code&gt;&amp;quot;hexo-tag-cloud&amp;quot;: &amp;quot;2.1.*&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;然后执行 &lt;code&gt;npm install&lt;/code&gt; 命令&lt;/li&gt;
-&lt;li&gt;然后需要你去修改主题的 tagcloud 的模板，这个依据你的主题而定。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;对于-ejs-的用户&quot;&gt;&lt;a href=&quot;#对于-ejs-的用户&quot; class=&quot;headerlink&quot; title=&quot;对于 ejs 的用户&quot;&gt;&lt;/a&gt;对于 ejs 的用户&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;这里以默认主题 landscape 为例。&lt;/li&gt;
-&lt;li&gt;tagcloud 模板文件为 &lt;code&gt;hexo/themes/landscape/layout/_widget/tagcloud.ejs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;将这个文件修改为如下内容：&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;% if (site.tags.length) &amp;#123; %&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quot; charset&amp;#x3D;&amp;quot;utf-8&amp;quot; src&amp;#x3D;&amp;quot;&amp;lt;%- url_for(&amp;#39;&amp;#x2F;js&amp;#x2F;tagcloud.js&amp;#39;) %&amp;gt;&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quot; charset&amp;#x3D;&amp;quot;utf-8&amp;quot; src&amp;#x3D;&amp;quot;&amp;lt;%- url_for(&amp;#39;&amp;#x2F;js&amp;#x2F;tagcanvas.js&amp;#39;) %&amp;gt;&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;div class&amp;#x3D;&amp;quot;widget-wrap&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;h3 class&amp;#x3D;&amp;quot;widget-title&amp;quot;&amp;gt;&amp;lt;%&amp;#x3D; __(&amp;#39;tagcloud&amp;#39;) %&amp;gt;&amp;lt;&amp;#x2F;h3&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;div id&amp;#x3D;&amp;quot;myCanvasContainer&amp;quot; class&amp;#x3D;&amp;quot;widget tagcloud&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;canvas width&amp;#x3D;&amp;quot;250&amp;quot; height&amp;#x3D;&amp;quot;250&amp;quot; id&amp;#x3D;&amp;quot;resCanvas&amp;quot; style&amp;#x3D;&amp;quot;width:100%&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;%- tagcloud() %&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;&amp;#x2F;canvas&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;% &amp;#125; %&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-如果你使用的是 &lt;a href=&quot;https://github.com/ppoffice/hexo-theme-icarus&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;icarus&lt;/a&gt; 主题, 请查阅 &lt;a href=&quot;https://github.com/MikeCoder/hexo-tag-cloud/issues/31&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Issue #31&lt;/a&gt;.
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/tagscloud.png&quot;
+        
+      
     
     </summary>
     
@@ -54,20 +51,19 @@
     <link href="http://yoursite.com/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</id>
     <published>2020-05-10T08:01:18.000Z</published>
-    <updated>2020-05-10T17:39:41.077Z</updated>
+    <updated>2020-05-11T08:48:46.708Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。&lt;/p&gt;
-&lt;h1 id=&quot;引用块&quot;&gt;&lt;a href=&quot;#引用块&quot; class=&quot;headerlink&quot; title=&quot;引用块&quot;&gt;&lt;/a&gt;引用块&lt;/h1&gt;&lt;p&gt;在文章中插入引言，可包含作者、来源和标题。&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;content&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;[author[&lt;/strong&gt;&lt;cite&gt;source]] [link] [source_link_title]&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;样例&quot;&gt;&lt;a href=&quot;#样例&quot; class=&quot;headerlink&quot; title=&quot;样例&quot;&gt;&lt;/a&gt;样例&lt;/h2&gt;&lt;h3 id=&quot;引用书上的句子&quot;&gt;&lt;a href=&quot;#引用书上的句子&quot; class=&quot;headerlink&quot; title=&quot;引用书上的句子&quot;&gt;&lt;/a&gt;引用书上的句子&lt;/h3&gt;&lt;blockquote&gt;&lt;p&gt;Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;David Levithan&lt;/strong&gt;&lt;cite&gt;Wide Awake&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;引用-Twitter&quot;&gt;&lt;a href=&quot;#引用-Twitter&quot; class=&quot;headerlink&quot; title=&quot;引用 Twitter&quot;&gt;&lt;/a&gt;引用 Twitter&lt;/h3&gt;&lt;blockquote&gt;&lt;p&gt;NEW: DevDocs now comes with syntax highlighting. &lt;a href=&quot;http://devdocs.io&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://devdocs.io&lt;/a&gt;&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;@DevDocs&lt;/strong&gt;&lt;cite&gt;&lt;a href=&quot;https://twitter.com/devdocs/status/356095192085962752&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;twitter.com/devdocs/status/356095192085962752&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。&lt;/p&gt;
+&lt;h1 id=&quot;引用块&quot;&gt;&lt;a href=&quot;#引用块&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
@@ -88,17 +84,18 @@
     <link href="http://yoursite.com/2020/05/10/hello-world/"/>
     <id>http://yoursite.com/2020/05/10/hello-world/</id>
     <published>2020-05-10T00:04:34.145Z</published>
-    <updated>2020-05-10T17:40:53.778Z</updated>
+    <updated>2020-05-11T08:49:19.359Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Server&lt;/a&gt;&lt;br&gt;
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
     
     </summary>
     
@@ -111,7 +108,7 @@
     <link href="http://yoursite.com/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</id>
     <published>2020-05-09T12:02:01.000Z</published>
-    <updated>2020-05-10T17:41:50.234Z</updated>
+    <updated>2020-05-11T08:49:12.338Z</updated>
     
     <summary type="html">
     
@@ -119,8 +116,7 @@
       
         
         
-          &lt;p&gt;这是我的博客。&lt;br&gt;今天天气很不错！&lt;/p&gt;
-
+          &lt;a
         
       
     

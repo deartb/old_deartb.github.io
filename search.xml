@@ -3,13 +3,14 @@
   <entry>
     <title>Hello World</title>
     <url>/2020/05/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    <content><![CDATA[<a id="more"></a>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <a id="more"></a></p>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <!-- more --></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
@@ -21,7 +22,8 @@
   <entry>
     <title>hexo标签云</title>
     <url>/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
-    <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagscloud.png" alt="TagCloud"></p>
+    <content><![CDATA[<a id="more"></a>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagscloud.png" alt="TagCloud"></p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
 <li>进入到 hexo 的根目录，然后在 <code>package.json</code> 中添加依赖: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code></li>
 <li>然后执行 <code>npm install</code> 命令</li>
@@ -31,8 +33,9 @@
 <li>这里以默认主题 landscape 为例。</li>
 <li>tagcloud 模板文件为 <code>hexo/themes/landscape/layout/_widget/tagcloud.ejs</code></li>
 <li>将这个文件修改为如下内容：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% if (site.tags.length) &#123; %&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;tagcloud&#39;) %&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">      &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">        &lt;%- tagcloud() %&gt;</span><br><span class="line">      &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.<a id="more"></a>
-<h4 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h4></li>
+如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.</li>
+</ul>
+<h4 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h4><ul>
 <li>这里以 Next 主题为例。</li>
 <li>找到文件 <code>next/layout/_macro/sidebar.swig</code>, 然后添加如下内容。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
@@ -73,18 +76,10 @@
       </tags>
   </entry>
   <entry>
-    <title>我的文章</title>
-    <url>/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>这是我的博客。<br>今天天气很不错！</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hexo文章的引用</title>
     <url>/2020/05/10/hexo%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
+    <content><![CDATA[<a id="more"></a>
+<p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
 <h1 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h1><p>在文章中插入引言，可包含作者、来源和标题。</p>
 <blockquote><p>content</p>
 <footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>
@@ -94,7 +89,7 @@
 
 <h3 id="引用-Twitter"><a href="#引用-Twitter" class="headerlink" title="引用 Twitter"></a>引用 Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p>
 <footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
- <a id="more"></a>
+
 <h3 id="引用网络上的文章"><a href="#引用网络上的文章" class="headerlink" title="引用网络上的文章"></a>引用网络上的文章</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
 
@@ -124,5 +119,15 @@
         <tag>引用</tag>
         <tag>代码块</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的文章</title>
+    <url>/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<a id="more"></a>
+<p>这是我的博客。<br>今天天气很不错！</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
   </entry>
 </search>
