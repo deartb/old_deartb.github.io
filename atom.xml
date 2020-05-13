@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-13T01:52:16.978Z</updated>
+  <updated>2020-05-13T12:05:55.093Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,113 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>收藏夹</title>
+    <link href="http://yoursite.com/2020/05/13/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
+    <id>http://yoursite.com/2020/05/13/%E6%94%B6%E8%97%8F%E5%A4%B9/</id>
+    <published>2020-05-13T11:42:46.000Z</published>
+    <updated>2020-05-13T12:05:55.093Z</updated>
+    
+    <summary type="html">
+    
+      一个收藏宝藏的地方
+    
+    </summary>
+    
+    
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="收藏夹" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
+    
+    
+      <category term="收藏夹" scheme="http://yoursite.com/tags/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>探索计划</title>
+    <link href="http://yoursite.com/2020/05/13/%E6%8E%A2%E7%B4%A2%E8%AE%A1%E5%88%92/"/>
+    <id>http://yoursite.com/2020/05/13/%E6%8E%A2%E7%B4%A2%E8%AE%A1%E5%88%92/</id>
+    <published>2020-05-13T11:37:38.000Z</published>
+    <updated>2020-05-13T11:59:54.466Z</updated>
+    
+    <summary type="html">
+    
+      正在探索......
+    
+    </summary>
+    
+    
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="探索" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/%E6%8E%A2%E7%B4%A2/"/>
+    
+    
+      <category term="探索" scheme="http://yoursite.com/tags/%E6%8E%A2%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机基础</title>
+    <link href="http://yoursite.com/2020/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-05-13T10:57:03.000Z</published>
+    <updated>2020-05-13T12:06:56.132Z</updated>
+    
+    <summary type="html">
+    
+      收藏一些计算机基础类的博客
+    
+    </summary>
+    
+    
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="收藏" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/%E6%94%B6%E8%97%8F/"/>
+    
+    
+      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="计算机组成" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
+    
+      <category term="计算机操作系统" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="计算机网络" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 博客搭建和next主题美化</title>
+    <link href="http://yoursite.com/2020/05/13/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8Cnext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    <id>http://yoursite.com/2020/05/13/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8Cnext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</id>
+    <published>2020-05-13T10:32:25.000Z</published>
+    <updated>2020-05-13T10:46:20.245Z</updated>
+    
+    <summary type="html">
+    
+      列举了 hexo 博客搭建和 next 主题美化过程中主要参考的博客
+    
+    </summary>
+    
+    
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/hexo/"/>
+    
+    
+      <category term="hexo 搭建" scheme="http://yoursite.com/tags/hexo-%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="next 美化" scheme="http://yoursite.com/tags/next-%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown 语法</title>
     <link href="http://yoursite.com/2020/05/12/Markdown-%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2020/05/12/Markdown-%E8%AF%AD%E6%B3%95/</id>
     <published>2020-05-12T03:10:18.000Z</published>
-    <updated>2020-05-13T01:52:16.978Z</updated>
+    <updated>2020-05-13T12:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -30,7 +132,9 @@
     </summary>
     
     
-      <category term="markdown" scheme="http://yoursite.com/categories/markdown/"/>
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="markdown" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/markdown/"/>
     
     
       <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
@@ -42,16 +146,18 @@
     <link href="http://yoursite.com/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
     <id>http://yoursite.com/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</id>
     <published>2020-05-11T14:29:43.000Z</published>
-    <updated>2020-05-12T14:18:04.086Z</updated>
+    <updated>2020-05-13T12:08:34.667Z</updated>
     
     <summary type="html">
     
-      默认首页会显示全文，这里设置只显示摘要。
+      给 next 主题添加首页文章截断、相册和阅读进度条功能。
     
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/hexo/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
@@ -65,7 +171,7 @@
     <link href="http://yoursite.com/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/"/>
     <id>http://yoursite.com/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/</id>
     <published>2020-05-10T10:12:57.000Z</published>
-    <updated>2020-05-13T01:43:22.049Z</updated>
+    <updated>2020-05-13T12:08:25.171Z</updated>
     
     <summary type="html">
     
@@ -74,7 +180,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/hexo/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
@@ -88,7 +196,7 @@
     <link href="http://yoursite.com/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/"/>
     <id>http://yoursite.com/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</id>
     <published>2020-05-10T08:01:18.000Z</published>
-    <updated>2020-05-13T01:46:32.143Z</updated>
+    <updated>2020-05-13T12:08:17.117Z</updated>
     
     <summary type="html">
     
@@ -97,7 +205,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/hexo/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>

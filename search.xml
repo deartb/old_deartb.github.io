@@ -135,10 +135,11 @@
 </tbody></table>
 <p>关于其它扩展语法可参见具体工具的使用说明。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
-<p><a href="https://github.com/younghz/Markdown" target="_blank" rel="noopener">markdown</a></p>
+<p><a href="https://github.com/younghz/Markdown" target="_blank" rel="noopener">younghz/Markdown</a></p>
 </blockquote>
 ]]></content>
       <categories>
+        <category>折腾技术</category>
         <category>markdown</category>
       </categories>
       <tags>
@@ -186,8 +187,32 @@
 <ul>
 <li>除了图片之外其他的文字和章节标题都可以像往常一样加。</li>
 </ul>
+<h2 id="阅读进度按钮-文章右下角"><a href="#阅读进度按钮-文章右下角" class="headerlink" title="阅读进度按钮(文章右下角)"></a>阅读进度按钮(文章右下角)</h2><blockquote>
+<p>安装插件：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cake-moon-menu --save</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>然后在站点配置文件_config.yml 中添加以下代码：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">moon_menu:</span><br><span class="line">  back2top:</span><br><span class="line">    enable: true</span><br><span class="line">    icon: fa fa-chevron-up</span><br><span class="line">    func: back2top</span><br><span class="line">    order: -1</span><br><span class="line">  back2bottom:</span><br><span class="line">    enable: true</span><br><span class="line">    icon: fa fa-chevron-down</span><br><span class="line">    func: back2bottom</span><br><span class="line">    order: -2</span><br></pre></td></tr></table></figure>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>如果想要修改按钮距离底部和右侧的位置，可以按下面的步骤操作：</p>
+<blockquote>
+<p>在博客的 <code>themes/next/source/css/_custom/custom.styl</code> 文件中添加以下代码<br>提示：若没有 <code>_custom</code> 目录和<code>custom.styl</code> 文件需要创建，并且在 <code>themes/next/source/css/main.styl</code> 文件中添加 <code>@import &quot;_custom/custom&quot;;</code> 代码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.moon-menu,.moon-menu-bg,.moon-menu-content &#123;</span><br><span class="line">  right: 20px !important; # 距离页面右侧像素</span><br><span class="line">  bottom: 20px !important; # 距离页面底部像素</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果想要按钮出现在左下角，可以添加以下代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.moon-menu,.moon-menu-bg,.moon-menu-content &#123;</span><br><span class="line">  left: 20px !important;</span><br><span class="line">&#125;</span><br><span class="line">.moon-menu-item &#123;</span><br><span class="line">  left: unset !important;</span><br><span class="line">  right: 1rem !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(<strong>感谢原作者提供的宝贵的意见！</strong>)</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
+<p><a href="https://www.qtmuniao.com/2019/10/16/hexo-theme-landscaping/" target="_blank" rel="noopener">Hexo Next 主题进阶设置</a><br><a href="https://tding.top/archives/567debe0.html" target="_blank" rel="noopener">Hexo 修改 back2top 标签 @小丁的个人博客</a><br><a href="https://github.com/jiangtj-lab/hexo-cake-moon-menu" target="_blank" rel="noopener">jiangtj-lab/hexo-cake-moon-menu</a></p>
+</blockquote>
 ]]></content>
       <categories>
+        <category>折腾技术</category>
         <category>hexo</category>
       </categories>
       <tags>
@@ -196,53 +221,54 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 博客搭建和next主题美化</title>
+    <url>/2020/05/13/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8Cnext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><blockquote>
+<p><a href="https://tding.top/" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://guanqr.com/" target="_blank" rel="noopener">荷戟独彷徨</a><br><a href="https://huangpiao.tech/" target="_blank" rel="noopener">见渊の博客</a><br><a href="https://vic.kim/" target="_blank" rel="noopener">Vicの博客</a><br><a href="https://yxyuxuan.github.io/" target="_blank" rel="noopener">于禤的博客</a><br><a href="https://io-oi.me/" target="_blank" rel="noopener">reuixiy</a><br><a href="https://leay.net/" target="_blank" rel="noopener">禾七博客</a><br><a href="https://zhiho.github.io/" target="_blank" rel="noopener">Zhiho’s Blog</a><br><a href="https://www.qtmuniao.com/" target="_blank" rel="noopener">Muniao’s blog</a><br><a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT 文档</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>折腾技术</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo 搭建</tag>
+        <tag>next 美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 标签云</title>
     <url>/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
-    <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagscloud.png" alt="TagCloud"></p>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
-<li>进入到 hexo 的根目录，然后在 <code>package.json</code> 中添加依赖: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code></li>
-<li>然后执行 <code>npm install</code> 命令</li>
-<li>然后需要你去修改主题的 tagcloud 的模板，这个依据你的主题而定。</li>
-</ul>
-<h3 id="对于-ejs-的用户"><a href="#对于-ejs-的用户" class="headerlink" title="对于 ejs 的用户"></a>对于 ejs 的用户</h3><ul>
-<li>这里以默认主题 landscape 为例。</li>
-<li>tagcloud 模板文件为 <code>hexo/themes/landscape/layout/_widget/tagcloud.ejs</code></li>
-<li>将这个文件修改为如下内容：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% if (site.tags.length) &#123; %&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;tagcloud&#39;) %&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">      &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">        &lt;%- tagcloud() %&gt;</span><br><span class="line">      &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.</li>
-</ul>
-<h3 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h3><ul>
-<li>这里以 Next 主题为例。</li>
-<li>找到文件 <code>next/layout/_macro/sidebar.swig</code>, 然后添加如下内容。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagcloud.png" alt="TagCloud"></p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote>
+<p>首先在博客的 hexo 的目录下的 <code>package.json</code> 文件中添加: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code><br>然后在终端中执行 <code>npm install</code> 命令<br>接下来去修改主题的 tagcloud 的模板。</p>
+</blockquote>
+<h3 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h3><blockquote>
+<p>这里以 Next 主题为例。<br>找到文件 <code>next/layout/_macro/sidebar.swig</code>, 然后添加如下内容。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<h3 id="对于-jade-用户"><a href="#对于-jade-用户" class="headerlink" title="对于 jade 用户"></a>对于 jade 用户</h3><ul>
-<li>这里以 Apollo 主题为例</li>
-<li>找到 <code>apollo/layout/archive.jade</code> 文件，并且把 container 代码块修改为如下内容:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">block container</span><br><span class="line">    include mixins&#x2F;post</span><br><span class="line">    .archive</span><br><span class="line">        h2(class&#x3D;&#39;archive-year&#39;)&#x3D; &#39;Tag Cloud&#39;</span><br><span class="line">        script(type&#x3D;&#39;text&#x2F;javascript&#39;, charset&#x3D;&#39;utf-8&#39;, src&#x3D;url_for(&quot;&#x2F;js&#x2F;tagcloud.js&quot;))</span><br><span class="line">        script(type&#x3D;&#39;text&#x2F;javascript&#39;, charset&#x3D;&#39;utf-8&#39;, src&#x3D;url_for(&quot;&#x2F;js&#x2F;tagcanvas.js&quot;))</span><br><span class="line"></span><br><span class="line">        #myCanvasContainer.widget.tagcloud(align&#x3D;&#39;center&#39;)</span><br><span class="line">            canvas#resCanvas(width&#x3D;&#39;500&#39;, height&#x3D;&#39;500&#39;, style&#x3D;&#39;width:100%&#39;)</span><br><span class="line">                !&#x3D;tagcloud()</span><br><span class="line">            !&#x3D;tagcloud()</span><br><span class="line">    +postList()</span><br></pre></td></tr></table></figure>
+<h3 id="对于-ejs-的用户"><a href="#对于-ejs-的用户" class="headerlink" title="对于 ejs 的用户"></a>对于 ejs 的用户</h3><blockquote>
+<p>这里以默认主题 landscape 为例。<br>tagcloud 模板文件为 <code>hexo/themes/landscape/layout/_widget/tagcloud.ejs</code><br>将这个文件修改为如下内容：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% if (site.tags.length) &#123; %&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;tagcloud&#39;) %&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">      &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">        &lt;%- tagcloud() %&gt;</span><br><span class="line">      &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<h3 id="对于-pug-用户"><a href="#对于-pug-用户" class="headerlink" title="对于 pug 用户"></a>对于 pug 用户</h3><ul>
-<li>这里以 Butterfly 主题为例</li>
-<li>找到 <code>Butterfly/layout/includes/widget/card_tags.pug</code> 文件</li>
-<li>将这个文件修改为如下内容(注意缩进):</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if site.tags.length</span><br><span class="line">  .card-widget.card-tags</span><br><span class="line">    .card-content</span><br><span class="line">      .item-headline</span><br><span class="line">        i.fa.fa-tags(aria-hidden&#x3D;&quot;true&quot;)</span><br><span class="line">        span&#x3D; _p(&#39;aside.card_tags&#39;)</span><br><span class="line">        script(type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcloud.js&quot;)</span><br><span class="line">        script(type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcanvas.js&quot;)</span><br><span class="line">        #myCanvasContainer.widget.tagcloud(align&#x3D;&#39;center&#39;)</span><br><span class="line">          canvas#resCanvas(width&#x3D;&#39;200&#39;, height&#x3D;&#39;200&#39;, style&#x3D;&#39;width&#x3D;100%&#39;)</span><br><span class="line">            !&#x3D; tagcloud()</span><br><span class="line">          !&#x3D; tagcloud(&#123;min_font: 16, max_font: 24, amount: 50, color: true, start_color: &#39;#999&#39;, end_color: &#39;#99a9bf&#39;&#125;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h3><ul>
-<li>完成安装和显示，可以通过 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 来进行本地预览, hexo clean 为必须选项。</li>
-<li><strong>PS:不要使用 <code>hexo g -d 或者 hexo d -g</code> 这类组合命令。</strong>详情见: <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/7" target="_blank" rel="noopener">Issue 7</a></li>
-</ul>
+<p>如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.</p>
+<h3 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h3><blockquote>
+<p>完成安装和显示，可以通过 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 来进行本地预览, hexo clean 为必须选项。<br><strong>PS:不要使用 <code>hexo g -d 或者 hexo d -g</code> 这类组合命令。</strong>详情见: <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/7" target="_blank" rel="noopener">Issue 7</a></p>
+</blockquote>
 <h2 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h2><p>现在 hexo-tag-cloud 插件支持自定义啦。非常简单的步骤就可以改变你的标签云的字体和颜色，还有突出高亮。</p>
-<ul>
-<li>在你的博客根目录，找到 <em>_config.yml</em> 文件然后添加如下的配置项:</li>
-</ul>
+<blockquote>
+<p>在你的博客根目录，找到 <em>_config.yml</em> 文件然后添加如下的配置项:</p>
+</blockquote>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: &#39;#333&#39;</span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: &#39;#E2E1D1&#39;</span><br><span class="line">    maxSpeed: 0.5</span><br><span class="line">    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动</span><br></pre></td></tr></table></figure>
 <ul>
 <li>然后使用 <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo s</code> 使用标签云。</li>
 </ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://vic.kim/2019/05/23/Hexo%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%A0%87%E7%AD%BE%E4%BA%91%E5%8F%8A%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA/" target="_blank" rel="noopener">Hexo博客建立标签云及效果展示</a><br><a href="https://github.com/MikeCoder/hexo-tag-cloud/blob/master/README.ZH.md" target="_blank" rel="noopener">Hexo Tag Cloud</a></p>
 ]]></content>
       <categories>
+        <category>折腾技术</category>
         <category>hexo</category>
       </categories>
       <tags>
@@ -290,6 +316,7 @@
 <p>视频<br>在文章中插入 Youtube 视频。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
+        <category>折腾技术</category>
         <category>hexo</category>
       </categories>
       <tags>
@@ -313,5 +340,65 @@
       <categories>
         <category>随笔</category>
       </categories>
+  </entry>
+  <entry>
+    <title>探索计划</title>
+    <url>/2020/05/13/%E6%8E%A2%E7%B4%A2%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">请输入密码</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2fcaca03929de3078ddcf81d52e02658f6d21c975960d69d51cfa6b8a2861a4d">0bff1ad54d907584d633a24e35dedf9522889683372b9f1d70f09934b1b1fb134851b2169fb13c42791d79ae3249fdc4676d16d121fad78e4211394b4ee8e16cad0be86863a4641d37372b266e9140e61258cb63bcb3b7aad7d44f6aa8b2346d9236259282bc8b91fce1f4473c1f69150433f00411d971181b816edce8ce23deea4b03a5926d2061103e4e6ec10f257fd2a702432fc82d05811751a7cd9d8cd01ebb2b35a733cdb905908df610fefb6ad44180f101c9042c70a154b41e761ad665b07513619e8e61446a8aea362f61aea6f10c6d85e56b2ddbf9fc8dd4d2de6e485f25ca5483aa2a31da0e3298a947846a27780db4d09e2d3335b3584c84f7a89730a6148693bc417dc2869f0f37997602940f5941011c2f043f323b5415bcba</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>折腾技术</category>
+        <category>探索</category>
+      </categories>
+      <tags>
+        <tag>探索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>收藏夹</title>
+    <url>/2020/05/13/%E6%94%B6%E8%97%8F%E5%A4%B9/</url>
+    <content><![CDATA[<h3 id="漂亮的博客"><a href="#漂亮的博客" class="headerlink" title="漂亮的博客"></a>漂亮的博客</h3><blockquote>
+<p><a href="https://blog.dlzhang.com/" target="_blank" rel="noopener">班班碎碎念</a></p>
+</blockquote>
+<h3 id="图标网"><a href="#图标网" class="headerlink" title="图标网"></a>图标网</h3><blockquote>
+<p><a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里巴巴矢量图标库</a><br><a href="http://www.fontawesome.com.cn/faicons/" target="_blank" rel="noopener">Font Awesome 中文网</a><br><a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome 官网</a><br><a href="https://www.easyicon.net/" target="_blank" rel="noopener">Easy Icon</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>折腾技术</category>
+        <category>收藏夹</category>
+      </categories>
+      <tags>
+        <tag>收藏夹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机基础</title>
+    <url>/2020/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><blockquote>
+<p><a href="https://wujun234.github.io/" target="_blank" rel="noopener">吴俊笔记本</a></p>
+<blockquote>
+<p><a href="https://wujun234.github.io/categories/01-数据结构与算法/" target="_blank" rel="noopener">数据结构与算法</a><br><a href="https://wujun234.github.io/categories/04-计算机网络/" target="_blank" rel="noopener">计算机网络</a><br><a href="https://wujun234.github.io/2020/03/18/03%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/01%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/01%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/#" target="_blank" rel="noopener">操作系统引论</a><br><a href="https://wujun234.github.io/categories/07-数据库/" target="_blank" rel="noopener">数据库</a></p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>折腾技术</category>
+        <category>收藏</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>计算机组成</tag>
+        <tag>计算机操作系统</tag>
+        <tag>计算机网络</tag>
+        <tag>数据库</tag>
+      </tags>
   </entry>
 </search>
