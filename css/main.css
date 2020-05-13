@@ -1277,7 +1277,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7591fe;
+  background: #b92fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2830,4 +2830,13 @@ mjx-container + br {
   line-height: 2.5em;
   color: #fff;
   cursor: pointer;
+}
+.post-body {
+  color: #000;
+}
+.moon-menu,
+.moon-menu-bg,
+.moon-menu-content {
+  right: 30px !important;
+  bottom: 20px !important;
 }
