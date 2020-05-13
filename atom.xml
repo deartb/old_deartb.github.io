@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-13T12:58:47.377Z</updated>
+  <updated>2020-05-13T15:42:04.613Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>科学上网</title>
+    <link href="http://yoursite.com/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <id>http://yoursite.com/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</id>
+    <published>2020-05-13T14:06:49.000Z</published>
+    <updated>2020-05-13T15:42:04.613Z</updated>
+    
+    <summary type="html">
+    
+      收藏搭建科学上网环境的教程
+    
+    </summary>
+    
+    
+      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="科学上网" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="trojan" scheme="http://yoursite.com/tags/trojan/"/>
+    
+      <category term="bbr" scheme="http://yoursite.com/tags/bbr/"/>
+    
+      <category term="科学上网" scheme="http://yoursite.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>收藏夹</title>
     <link href="http://yoursite.com/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
     <id>http://yoursite.com/%E6%94%B6%E8%97%8F%E5%A4%B9/</id>
     <published>2020-05-13T11:42:46.000Z</published>
-    <updated>2020-05-13T12:58:47.377Z</updated>
+    <updated>2020-05-13T15:32:12.358Z</updated>
     
     <summary type="html">
     
@@ -30,12 +57,8 @@
     </summary>
     
     
-      <category term="折腾技术" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/"/>
+      <category term="收藏夹" scheme="http://yoursite.com/categories/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
     
-      <category term="收藏夹" scheme="http://yoursite.com/categories/%E6%8A%98%E8%85%BE%E6%8A%80%E6%9C%AF/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
-    
-    
-      <category term="收藏夹" scheme="http://yoursite.com/tags/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
     
   </entry>
   
@@ -92,7 +115,7 @@
     <link href="http://yoursite.com/Markdown-%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/Markdown-%E8%AF%AD%E6%B3%95/</id>
     <published>2020-05-12T03:10:18.000Z</published>
-    <updated>2020-05-13T13:32:09.450Z</updated>
+    <updated>2020-05-13T15:05:17.213Z</updated>
     
     <summary type="html">
     
