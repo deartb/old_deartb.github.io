@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <!-- more --></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Markdown 语法</title>
-    <url>/2020/05/12/Markdown-%E8%AF%AD%E6%B3%95/</url>
+    <url>/Markdown-%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><blockquote>
 <h3 id="Markdown是什么？"><a href="#Markdown是什么？" class="headerlink" title="Markdown是什么？"></a>Markdown是什么？</h3><h3 id="为什么要使用它？"><a href="#为什么要使用它？" class="headerlink" title="为什么要使用它？"></a>为什么要使用它？</h3><h3 id="怎么使用？"><a href="#怎么使用？" class="headerlink" title="怎么使用？"></a>怎么使用？</h3><h3 id="尝试一下"><a href="#尝试一下" class="headerlink" title="尝试一下"></a>尝试一下</h3></blockquote>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="Markdown是什么？-1"><a href="#Markdown是什么？-1" class="headerlink" title="Markdown是什么？"></a>Markdown是什么？</h3><p><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。<br><strong>Markdown</strong>也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。    </p>
@@ -147,27 +166,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/05/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br> <!-- more --></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo 主题设置</title>
-    <url>/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</url>
+    <url>/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<h2 id="首页截断设置"><a href="#首页截断设置" class="headerlink" title="首页截断设置"></a>首页截断设置</h2><p>默认首页会显示全文，这里设置只显示摘要。<br>修改方法：在主题配置文件设置<code>excerpt_description: true</code>和<code>excerpt_description: true</code></p>
 <h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>在文章中需要截断的地方加上代码：<code>&lt;!-- more --&gt;</code></p>
 <h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>在文章元信息中指定摘要：<code>description</code></p>
@@ -222,7 +222,7 @@
   </entry>
   <entry>
     <title>hexo 博客搭建和next主题美化</title>
-    <url>/2020/05/13/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8Cnext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <url>/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8Cnext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><blockquote>
 <p><a href="https://tding.top/" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://guanqr.com/" target="_blank" rel="noopener">荷戟独彷徨</a><br><a href="https://huangpiao.tech/" target="_blank" rel="noopener">见渊の博客</a><br><a href="https://vic.kim/" target="_blank" rel="noopener">Vicの博客</a><br><a href="https://yxyuxuan.github.io/" target="_blank" rel="noopener">于禤的博客</a><br><a href="https://io-oi.me/" target="_blank" rel="noopener">reuixiy</a><br><a href="https://leay.net/" target="_blank" rel="noopener">禾七博客</a><br><a href="https://zhiho.github.io/" target="_blank" rel="noopener">Zhiho’s Blog</a><br><a href="https://www.qtmuniao.com/" target="_blank" rel="noopener">Muniao’s blog</a><br><a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT 文档</a></p>
 </blockquote>
@@ -237,48 +237,8 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 标签云</title>
-    <url>/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
-    <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagcloud.png" alt="TagCloud"></p>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote>
-<p>首先在博客的 hexo 的目录下的 <code>package.json</code> 文件中添加: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code><br>然后在终端中执行 <code>npm install</code> 命令<br>接下来去修改主题的 tagcloud 的模板。</p>
-</blockquote>
-<h3 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h3><blockquote>
-<p>这里以 Next 主题为例。<br>找到文件 <code>next/layout/_macro/sidebar.swig</code>, 然后添加如下内容。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="对于-ejs-的用户"><a href="#对于-ejs-的用户" class="headerlink" title="对于 ejs 的用户"></a>对于 ejs 的用户</h3><blockquote>
-<p>这里以默认主题 landscape 为例。<br>tagcloud 模板文件为 <code>hexo/themes/landscape/layout/_widget/tagcloud.ejs</code><br>将这个文件修改为如下内容：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% if (site.tags.length) &#123; %&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;tagcloud&#39;) %&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">      &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">        &lt;%- tagcloud() %&gt;</span><br><span class="line">      &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-
-<p>如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.</p>
-<h3 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h3><blockquote>
-<p>完成安装和显示，可以通过 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 来进行本地预览, hexo clean 为必须选项。<br><strong>PS:不要使用 <code>hexo g -d 或者 hexo d -g</code> 这类组合命令。</strong>详情见: <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/7" target="_blank" rel="noopener">Issue 7</a></p>
-</blockquote>
-<h2 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h2><p>现在 hexo-tag-cloud 插件支持自定义啦。非常简单的步骤就可以改变你的标签云的字体和颜色，还有突出高亮。</p>
-<blockquote>
-<p>在你的博客根目录，找到 <em>_config.yml</em> 文件然后添加如下的配置项:</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: &#39;#333&#39;</span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: &#39;#E2E1D1&#39;</span><br><span class="line">    maxSpeed: 0.5</span><br><span class="line">    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动</span><br></pre></td></tr></table></figure>
-<ul>
-<li>然后使用 <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo s</code> 使用标签云。</li>
-</ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://vic.kim/2019/05/23/Hexo%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%A0%87%E7%AD%BE%E4%BA%91%E5%8F%8A%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA/" target="_blank" rel="noopener">Hexo博客建立标签云及效果展示</a><br><a href="https://github.com/MikeCoder/hexo-tag-cloud/blob/master/README.ZH.md" target="_blank" rel="noopener">Hexo Tag Cloud</a></p>
-]]></content>
-      <categories>
-        <category>折腾技术</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>标签云</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo 标签插件</title>
-    <url>/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
+    <url>/hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
 <h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>在文章中插入引言，可包含作者、来源和标题。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
@@ -326,8 +286,48 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 标签云</title>
+    <url>/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
+    <content><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="/images/tagcloud.png" alt="TagCloud"></p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote>
+<p>首先在博客的 hexo 的目录下的 <code>package.json</code> 文件中添加: <code>&quot;hexo-tag-cloud&quot;: &quot;2.1.*&quot;</code><br>然后在终端中执行 <code>npm install</code> 命令<br>接下来去修改主题的 tagcloud 的模板。</p>
+</blockquote>
+<h3 id="对于-swig-用户"><a href="#对于-swig-用户" class="headerlink" title="对于 swig 用户"></a>对于 swig 用户</h3><blockquote>
+<p>这里以 Next 主题为例。<br>找到文件 <code>next/layout/_macro/sidebar.swig</code>, 然后添加如下内容。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#123;&#123; url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) &#125;&#125;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="对于-ejs-的用户"><a href="#对于-ejs-的用户" class="headerlink" title="对于 ejs 的用户"></a>对于 ejs 的用户</h3><blockquote>
+<p>这里以默认主题 landscape 为例。<br>tagcloud 模板文件为 <code>hexo/themes/landscape/layout/_widget/tagcloud.ejs</code><br>将这个文件修改为如下内容：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% if (site.tags.length) &#123; %&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcloud.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&lt;%- url_for(&#39;&#x2F;js&#x2F;tagcanvas.js&#39;) %&gt;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;tagcloud&#39;) %&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">      &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width:100%&quot;&gt;</span><br><span class="line">        &lt;%- tagcloud() %&gt;</span><br><span class="line">      &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果你使用的是 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a> 主题, 请查阅 <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/31" target="_blank" rel="noopener">Issue #31</a>.</p>
+<h3 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h3><blockquote>
+<p>完成安装和显示，可以通过 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 来进行本地预览, hexo clean 为必须选项。<br><strong>PS:不要使用 <code>hexo g -d 或者 hexo d -g</code> 这类组合命令。</strong>详情见: <a href="https://github.com/MikeCoder/hexo-tag-cloud/issues/7" target="_blank" rel="noopener">Issue 7</a></p>
+</blockquote>
+<h2 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h2><p>现在 hexo-tag-cloud 插件支持自定义啦。非常简单的步骤就可以改变你的标签云的字体和颜色，还有突出高亮。</p>
+<blockquote>
+<p>在你的博客根目录，找到 <em>_config.yml</em> 文件然后添加如下的配置项:</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: &#39;#333&#39;</span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: &#39;#E2E1D1&#39;</span><br><span class="line">    maxSpeed: 0.5</span><br><span class="line">    pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动</span><br></pre></td></tr></table></figure>
+<ul>
+<li>然后使用 <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo s</code> 使用标签云。</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://vic.kim/2019/05/23/Hexo%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E6%A0%87%E7%AD%BE%E4%BA%91%E5%8F%8A%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA/" target="_blank" rel="noopener">Hexo博客建立标签云及效果展示</a><br><a href="https://github.com/MikeCoder/hexo-tag-cloud/blob/master/README.ZH.md" target="_blank" rel="noopener">Hexo Tag Cloud</a></p>
+]]></content>
+      <categories>
+        <category>折腾技术</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>标签云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的文章</title>
-    <url>/2020/05/09/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <url>/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
   <div class="hbe-input-container">
   <input type="password" id="hbePass" placeholder="" />
@@ -343,7 +343,7 @@
   </entry>
   <entry>
     <title>探索计划</title>
-    <url>/2020/05/13/%E6%8E%A2%E7%B4%A2%E8%AE%A1%E5%88%92/</url>
+    <url>/%E6%8E%A2%E7%B4%A2%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
   <div class="hbe-input-container">
   <input type="password" id="hbePass" placeholder="" />
@@ -363,7 +363,7 @@
   </entry>
   <entry>
     <title>收藏夹</title>
-    <url>/2020/05/13/%E6%94%B6%E8%97%8F%E5%A4%B9/</url>
+    <url>/%E6%94%B6%E8%97%8F%E5%A4%B9/</url>
     <content><![CDATA[<h3 id="漂亮的博客"><a href="#漂亮的博客" class="headerlink" title="漂亮的博客"></a>漂亮的博客</h3><blockquote>
 <p><a href="https://blog.dlzhang.com/" target="_blank" rel="noopener">班班碎碎念</a></p>
 </blockquote>
@@ -377,28 +377,6 @@
       </categories>
       <tags>
         <tag>收藏夹</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机基础</title>
-    <url>/2020/05/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><blockquote>
-<p><a href="https://wujun234.github.io/" target="_blank" rel="noopener">吴俊笔记本</a></p>
-<blockquote>
-<p><a href="https://wujun234.github.io/categories/01-数据结构与算法/" target="_blank" rel="noopener">数据结构与算法</a><br><a href="https://wujun234.github.io/categories/04-计算机网络/" target="_blank" rel="noopener">计算机网络</a><br><a href="https://wujun234.github.io/2020/03/18/03%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/01%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/01%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E8%AE%BA/#" target="_blank" rel="noopener">操作系统引论</a><br><a href="https://wujun234.github.io/categories/07-数据库/" target="_blank" rel="noopener">数据库</a></p>
-</blockquote>
-</blockquote>
-]]></content>
-      <categories>
-        <category>折腾技术</category>
-        <category>收藏</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>计算机组成</tag>
-        <tag>计算机操作系统</tag>
-        <tag>计算机网络</tag>
-        <tag>数据库</tag>
       </tags>
   </entry>
 </search>
