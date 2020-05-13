@@ -12,15 +12,26 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.min.css">
-  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","padding":18,"offset":15,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","padding":18,"offset":15,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "5849c204"
+    });
+  daovoice('update');
+  </script>
+
+
   <meta name="description" content="默认首页会显示全文，这里设置只显示摘要。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 主题设置">
@@ -29,7 +40,7 @@
 <meta property="og:description" content="默认首页会显示全文，这里设置只显示摘要。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-11T14:29:43.000Z">
-<meta property="article:modified_time" content="2020-05-11T15:23:25.310Z">
+<meta property="article:modified_time" content="2020-05-12T14:18:04.086Z">
 <meta property="article:author" content="唐宝">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="主题设置">
@@ -83,7 +94,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -124,17 +135,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-photos">
@@ -201,7 +212,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F-%E6%A2%A8%E8%8A%B1.jpg">
       <meta itemprop="name" content="唐宝">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="折腾技术，享受生活">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -218,10 +229,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-11 22:29:43 / 修改时间：23:23:25" itemprop="dateCreated datePublished" datetime="2020-05-11T22:29:43+08:00">2020-05-11</time>
+              <time title="创建时间：2020-05-11 22:29:43" itemprop="dateCreated datePublished" datetime="2020-05-11T22:29:43+08:00">2020-05-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-12 22:18:04" itemprop="dateModified" datetime="2020-05-12T22:18:04+08:00">2020-05-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -232,13 +249,20 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>838</span>
+              <span>835</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -258,22 +282,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="首页截断设置"><a href="#首页截断设置" class="headerlink" title="首页截断设置"></a>首页截断设置</h1><p>默认首页会显示全文，这里设置只显示摘要。<br>修改方法：在主题配置文件设置<code>excerpt_description: true</code>和<code>excerpt_description: true</code></p>
+        <h2 id="首页截断设置"><a href="#首页截断设置" class="headerlink" title="首页截断设置"></a>首页截断设置</h2><p>默认首页会显示全文，这里设置只显示摘要。<br>修改方法：在主题配置文件设置<code>excerpt_description: true</code>和<code>excerpt_description: true</code></p>
 <h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>在文章中需要截断的地方加上代码：<code>&lt;!-- more --&gt;</code></p>
 <h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>在文章元信息中指定摘要：<code>description</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">- 分类</span><br><span class="line">tags:</span><br><span class="line">- 标签</span><br><span class="line">- 标签</span><br><span class="line">description: 摘要内容</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
-<h1 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h1><p>由于平时没事也拍点东西，于是就想也有个展示的页面。探索了一下，可以利用 <code>next</code> 的插件 <code>group picture</code> 来实现，他的原理很简单，就是利用 <code>next</code> 主题的 <code>Tag Plugin</code> 这种语法提供了一种展示图片的布局。</p>
+<h2 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h2><p>由于平时没事也拍点东西，于是就想也有个展示的页面。探索了一下，可以利用 <code>next</code> 的插件 <code>group picture</code> 来实现，他的原理很简单，就是利用 <code>next</code> 主题的 <code>Tag Plugin</code> 这种语法提供了一种展示图片的布局。</p>
 <p>需要以下几步：</p>
 <ul>
 <li><p>首先 <code>hexo new page photos</code> 新建一个名为 <code>photos</code> 的标签页，并且在 <code>themes/next/languages/zh-CN.yml</code> 中的 <code>menu</code> 一项下面添加 <code>photos: 相册</code>，这样在首页菜单栏才会显示中文相册。</p>
 </li>
 <li><p>其次，可以直接在 <code>source/photos/index.md</code> 写文章，并在需要插入图片的时候用以下方式来组织你的图片列表：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## 文字描述</span><br><span class="line">&#123;% gp 4-2 %&#125;</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="文字描述"><a href="#文字描述" class="headerlink" title="文字描述"></a>文字描述</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp 4-2 %&#125;</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">  ![](&#x2F;images&#x2F;docs&#x2F;github.png)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+
 <p>其中 ‘4-2’ 的意思是改组一共有4张图片，每行排最多2张。</p>
-</li>
-<li><p>除了图片之外其他的文字和章节标题都可以像往常一样加。</p>
-</li>
+<ul>
+<li>除了图片之外其他的文字和章节标题都可以像往常一样加。</li>
 </ul>
 
     </div>
@@ -287,12 +313,29 @@
   <div class="popular-posts-header">推荐文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/2020/05/10/hexo标签云/" rel="bookmark">hexo标签云</a></div>
+      <div class="popular-posts-title"><a href="/2020/05/10/hexo-标签云/" rel="bookmark">hexo 标签云</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/2020/05/10/hexo的标签插件/" rel="bookmark">hexo文章的引用</a></div>
+      <div class="popular-posts-title"><a href="/2020/05/10/hexo-标签插件/" rel="bookmark">hexo 标签插件</a></div>
     </li>
   </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>唐宝
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/05/11/hexo-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/" title="hexo 主题设置">http://yoursite.com/2020/05/11/hexo-主题设置/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
 
       <footer class="post-footer">
@@ -309,10 +352,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/05/10/hexo%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="prev" title="hexo标签云">
-      <i class="fa fa-chevron-left"></i> hexo标签云
+    <a href="/2020/05/10/hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="prev" title="hexo 标签云">
+      <i class="fa fa-chevron-left"></i> hexo 标签云
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/12/Markdown-%E8%AF%AD%E6%B3%95/" rel="next" title="Markdown 语法">
+      Markdown 语法 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -372,7 +418,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首页截断设置"><span class="nav-number">1.</span> <span class="nav-text">首页截断设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一："><span class="nav-number">1.0.1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二："><span class="nav-number">1.0.2.</span> <span class="nav-text">方法二：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相册"><span class="nav-number">2.</span> <span class="nav-text">相册</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首页截断设置"><span class="nav-number">1.</span> <span class="nav-text">首页截断设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一："><span class="nav-number">1.1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二："><span class="nav-number">1.2.</span> <span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相册"><span class="nav-number">2.</span> <span class="nav-text">相册</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文字描述"><span class="nav-number">2.1.</span> <span class="nav-text">文字描述</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -381,27 +427,27 @@
     <img class="site-author-image" itemprop="image" alt="唐宝"
       src="/images/%E5%A4%B4%E5%83%8F-%E6%A2%A8%E8%8A%B1.jpg">
   <p class="site-author-name" itemprop="name">唐宝</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">折腾技术，享受生活</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -413,12 +459,6 @@
       <span class="links-of-author-item">
         <a href="mailto:tb257476@gmail.com" title="E-Mail → mailto:tb257476@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
-      <span class="links-of-author-item">
-        <a href="/1464668826" title="QQ → 1464668826"><i class="fab fa-qq fa-fw"></i>QQ</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="/%E5%94%90%E5%AE%9D" title="WeChat → 唐宝"><i class="fab fa-weixin fa-fw"></i>WeChat</a>
-      </span>
   </div>
 
 
@@ -428,10 +468,9 @@
         <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
         <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
         <div class="widget-wrap">
-            <h3 class="widget-title">标签云</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width:100%">
-                    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/" rel="tag">主题设置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81%E5%9D%97/" rel="tag">代码块</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E7%94%A8/" rel="tag">引用</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="tag">标签云</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/" rel="tag">主题设置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81%E5%9D%97/" rel="tag">代码块</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E7%94%A8/" rel="tag">引用</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="tag">标签云</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -463,17 +502,37 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">9k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
 </div>
   <div class="powered-by">    </div>
 
         
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -490,12 +549,8 @@
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
 
 
 <script src="/js/schemes/pisces.js"></script>
