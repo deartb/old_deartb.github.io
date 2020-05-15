@@ -423,4 +423,828 @@
         <tag>科学上网</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Python数据分析之 NumPy</title>
+    <url>/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8BNumpy/</url>
+    <content><![CDATA[<h2 id="NumPy-简介"><a href="#NumPy-简介" class="headerlink" title="NumPy 简介"></a>NumPy 简介</h2><p>NumPy(Numerical Python) 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。</p>
+<p>NumPy 是一个运行速度非常快的数学库，主要用于数组计算，包含：</p>
+<ul>
+<li>一个强大的N维数组对象 ndarray</li>
+<li>广播功能函数</li>
+<li>整合 C/C++/Fortran 代码的工具</li>
+<li>线性代数、傅里叶变换、随机数生成等功能</li>
+</ul>
+<h2 id="NumPy-数组属性"><a href="#NumPy-数组属性" class="headerlink" title="NumPy 数组属性"></a>NumPy 数组属性</h2><p>本章节我们将来了解 NumPy 数组的一些基本属性。<br> <strong>秩（rank）</strong>：NumPy 数组的维数称为秩（rank），秩就是轴的数量，即数组的维度，一维数组的秩为 1，二维数组的秩为 2，以此类推。  </p>
+<p> <strong>轴（axis）</strong>：在 NumPy中，每一个线性的数组称为是一个轴（axis），也就是维度（dimensions）。比如说，二维数组相当于是两个一维数组，其中第一个一维数组中每个元素又是一个一维数组。所以一维数组就是 NumPy 中的轴（axis），第一个轴相当于是底层数组，第二个轴是底层数组里的数组。而轴的数量——秩，就是数组的维数。</p>
+<p>很多时候可以声明 axis。axis=0，表示沿着第 0 轴进行操作，即对每一列进行操作；axis=1，表示沿着第1轴进行操作，即对每一行进行操作。</p>
+<p>NumPy 的数组中比较重要 ndarray 对象属性有</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ndarray.ndim</td>
+<td>秩，即轴的数量或维度的数量</td>
+</tr>
+<tr>
+<td>ndarray.shape</td>
+<td>数组的维度，对于矩阵，n 行 m 列</td>
+</tr>
+<tr>
+<td>ndarray.size</td>
+<td>数组元素的总个数，相当于 .shape 中 n*m 的值</td>
+</tr>
+<tr>
+<td>ndarray.dtype</td>
+<td>ndarray 对象的元素类型</td>
+</tr>
+<tr>
+<td>ndarray.itemsize</td>
+<td>ndarray 对象中每个元素的大小，以字节为单位</td>
+</tr>
+</tbody></table>
+<p>首先导入 numpy 包</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br><span class="line">print(a.ndim)</span><br><span class="line">print(a.shape)</span><br><span class="line">print(a.size)</span><br><span class="line"></span><br><span class="line">print(a.dtype)</span><br><span class="line">print(a.itemsize)</span><br></pre></td></tr></table></figure>
+
+<p>2<br>(3, 3)<br>9</p>
+<p>int64<br>8</p>
+<h2 id="NumPy-数据类型"><a href="#NumPy-数据类型" class="headerlink" title="NumPy 数据类型"></a>NumPy 数据类型</h2><p>numpy 支持的数据类型比 Python 内置的类型要多很多，基本上可以和 C 语言的数据类型对应上。<br>其中部分类型对应为 Python 内置的类型。下表列举了常用 NumPy 基本类型。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bool_</td>
+<td>布尔型数据类型（True 或者 False）</td>
+</tr>
+<tr>
+<td>int_</td>
+<td>默认的整数类型（类似于 C 语言中的 long，int32 或 int64）</td>
+</tr>
+<tr>
+<td>intc</td>
+<td>与 C 的 int 类型一样，一般是 int32 或 int 64</td>
+</tr>
+<tr>
+<td>intp</td>
+<td>用于索引的整数类型（类似于 C 的 ssize_t，一般情况下仍然是 int32 或 int64）</td>
+</tr>
+<tr>
+<td>int8</td>
+<td>字节（-128 to 127）</td>
+</tr>
+<tr>
+<td>int16</td>
+<td>整数（-32768 to 32767）</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>整数（-2147483648 to 2147483647）</td>
+</tr>
+<tr>
+<td>int64</td>
+<td>整数（-9223372036854775808 to 9223372036854775807）</td>
+</tr>
+<tr>
+<td>uint8</td>
+<td>无符号整数（0 to 255）</td>
+</tr>
+<tr>
+<td>uint16</td>
+<td>无符号整数（0 to 65535）</td>
+</tr>
+<tr>
+<td>uint32</td>
+<td>无符号整数（0 to 4294967295）</td>
+</tr>
+<tr>
+<td>uint64</td>
+<td>无符号整数（0 to 18446744073709551615）</td>
+</tr>
+<tr>
+<td>float_</td>
+<td>float64 类型的简写</td>
+</tr>
+<tr>
+<td>float16</td>
+<td>半精度浮点数，包括：1 个符号位，5 个指数位，10 个尾数位</td>
+</tr>
+<tr>
+<td>float32</td>
+<td>单精度浮点数，包括：1 个符号位，8 个指数位，23 个尾数位</td>
+</tr>
+<tr>
+<td>float64</td>
+<td>双精度浮点数，包括：1 个符号位，11 个指数位，52 个尾数位</td>
+</tr>
+<tr>
+<td>complex_</td>
+<td>complex128 类型的简写，即 128 位复数</td>
+</tr>
+<tr>
+<td>complex64</td>
+<td>复数，表示双 32 位浮点数（实数部分和虚数部分）</td>
+</tr>
+<tr>
+<td>complex128</td>
+<td>复数，表示双 64 位浮点数（实数部分和虚数部分）</td>
+</tr>
+</tbody></table>
+<p>numpy 的数值类型实际上是 dtype 对象的实例，并对应唯一的字符，包括 np.bool_，np.int32，np.float32，等等。</p>
+<p>接下来我们可以通过实例来理解。</p>
+<h3 id="使用标量类型"><a href="#使用标量类型" class="headerlink" title="使用标量类型"></a>使用标量类型</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dt &#x3D; np.dtype(np.int32)</span><br><span class="line">print(dt)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># int8, int16, int32, int64 四种数据类型可以使用字符串 &#39;i1&#39;, &#39;i2&#39;,&#39;i4&#39;,&#39;i8&#39; 代替</span><br><span class="line"></span><br><span class="line">dt &#x3D; np.dtype(&#39;i4&#39;)</span><br><span class="line">print(dt)</span><br></pre></td></tr></table></figure>
+
+<p>int32<br>int32</p>
+<h3 id="使用结构化数据类型"><a href="#使用结构化数据类型" class="headerlink" title="使用结构化数据类型"></a>使用结构化数据类型</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 创建结构化数据类型</span><br><span class="line">import numpy as np</span><br><span class="line">dt &#x3D; np.dtype([(&#39;age&#39;,np.int8)]) </span><br><span class="line"></span><br><span class="line"># 将数据类型应用于 ndarray 对象</span><br><span class="line">a &#x3D; np.array([(10,),(20,),(30,)], dtype &#x3D; dt) </span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line"># 类型字段名可以用于存取实际的 age 列 </span><br><span class="line">print(a[&#39;age&#39;])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[(10,) (20,) (30,)]</span><br><span class="line">[10 20 30]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下面的示例定义一个结构化数据类型 student，包含字符串字段 name，整数字段 age，及浮点字段 marks，并将这个 dtype 应用到 ndarray 对象。</span><br><span class="line"></span><br><span class="line">student &#x3D; np.dtype([(&#39;name&#39;,&#39;S20&#39;), (&#39;age&#39;, &#39;i1&#39;), (&#39;marks&#39;, &#39;f4&#39;)]) </span><br><span class="line">print(student)</span><br><span class="line"># 提示：S, a：(byte-)字符串</span><br><span class="line">a &#x3D; np.array([(&#39;abc&#39;, 21, 50),(&#39;xyz&#39;, 18, 75)], dtype &#x3D; student) </span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[(&#39;name&#39;, &#39;S20&#39;), (&#39;age&#39;, &#39;i1&#39;), (&#39;marks&#39;, &#39;&lt;f4&#39;)]</span><br><span class="line">[(b&#39;abc&#39;, 21, 50.) (b&#39;xyz&#39;, 18, 75.)]</span><br></pre></td></tr></table></figure>
+
+<h2 id="ndarray-创建数组"><a href="#ndarray-创建数组" class="headerlink" title="ndarray 创建数组"></a>ndarray 创建数组</h2><ul>
+<li>从python中的列表、元组等类型创建ndarry数组。</li>
+<li>使用NumPy中的函数创建ndarray数组，如：arrange，ones,zeros等。</li>
+<li>从字节流中创建ndarray数组。</li>
+<li>从文件中读取特定格式，创建ndarray数组。</li>
+</ul>
+<h3 id="从python中的列表、元组等类型创建ndarry数组。"><a href="#从python中的列表、元组等类型创建ndarry数组。" class="headerlink" title="从python中的列表、元组等类型创建ndarry数组。"></a>从python中的列表、元组等类型创建ndarry数组。</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列表</span><br><span class="line">a &#x3D; np.array([0,1,2,3])</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line"># 元组</span><br><span class="line">b &#x3D; np.array((0,1,2,3,4,5))</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line"># 元组+列表</span><br><span class="line">c &#x3D; np.array([(0,1,2),[3,4,5],(6,7,8)])</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<p>[0 1 2 3]<br>[0 1 2 3 4 5]<br>[[0 1 2]<br>[3 4 5]<br>[6 7 8]]</p>
+<h3 id="使用NumPy中的函数创建ndarray数组，如：arange，ones-zeros-ones-like-zeros-like等。"><a href="#使用NumPy中的函数创建ndarray数组，如：arange，ones-zeros-ones-like-zeros-like等。" class="headerlink" title="使用NumPy中的函数创建ndarray数组，如：arange，ones, zeros, ones_like, zeros_like等。"></a>使用NumPy中的函数创建ndarray数组，如：arange，ones, zeros, ones_like, zeros_like等。</h3><p> (1) ones,full 类</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>np.arange(n)</td>
+<td>类似于range()函数，返回ndarray类型，元素从0到n-1</td>
+</tr>
+<tr>
+<td>np.ones(shape)</td>
+<td>生成全1数组，shape是元组类型</td>
+</tr>
+<tr>
+<td>np.zeros(shape)</td>
+<td>生成全0数组，shape是元组类型</td>
+</tr>
+<tr>
+<td>np.full(shape,val)</td>
+<td>生成一个数组，，每个元素值都是val, shape是元组类型</td>
+</tr>
+<tr>
+<td>np.eye(n)</td>
+<td>创建一个n*n的矩阵，对角线为1，其余为0</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(1,5)</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">b &#x3D; np.zeros((2,2))</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line">c &#x3D; np.ones((2,3))</span><br><span class="line">print(c)</span><br><span class="line"></span><br><span class="line">d &#x3D; np.full((3,4),2)</span><br><span class="line">print(d)</span><br><span class="line"></span><br><span class="line">e &#x3D; np.eye(3)</span><br><span class="line">print(e)</span><br></pre></td></tr></table></figure>
+
+<p>[1 2 3 4]<br>[[0. 0.]<br>[0. 0.]]<br>[[1. 1. 1.]<br>[1. 1. 1.]]<br>[[2 2 2 2]<br>[2 2 2 2]<br>[2 2 2 2]]<br>[[1. 0. 0.]<br>[0. 1. 0.]<br>[0. 0. 1.]]</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(d.dtype)</span><br><span class="line">print(d.itemsize)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int64</span><br><span class="line">8</span><br></pre></td></tr></table></figure>
+
+<p> (2) ones_like,full_like 类</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>np.zeros_like(a)</td>
+<td>根据数组a的形状,生成全0数组</td>
+</tr>
+<tr>
+<td>np.ones_like(a)</td>
+<td>根据数组a的形状,生成全1数组</td>
+</tr>
+<tr>
+<td>np.full_like(a,val)</td>
+<td>根据数组a的形状,生成值为val的数组</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.full((3,3),5)</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">zeros &#x3D; np.zeros_like(a)</span><br><span class="line">print(zeros)</span><br><span class="line"></span><br><span class="line">ones &#x3D; np.ones_like(a)</span><br><span class="line">print(ones)</span><br><span class="line"></span><br><span class="line">full &#x3D; np.full_like(a,3)</span><br><span class="line">print(full)</span><br></pre></td></tr></table></figure>
+
+<p>[[5 5 5]<br>    [5 5 5]<br>    [5 5 5]]</p>
+<p>[[0 0 0]<br>    [0 0 0]<br>    [0 0 0]]</p>
+<p>[[1 1 1]<br>    [1 1 1]<br>    [1 1 1]]</p>
+<p>[[3 3 3]<br>    [3 3 3]<br>    [3 3 3]]</p>
+<p> (3) linspace, concatenate 类</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>np.linspace()</td>
+<td>根据起止数据等间距填充数据，形成数组</td>
+</tr>
+<tr>
+<td>np.concatenate()</td>
+<td>将多个数组合并成一个新的数组</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.linspace(1,5,5)</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">b &#x3D; np.linspace(1,5,5,endpoint&#x3D;False)</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line">c &#x3D; np.concatenate((a,b))</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[1. 2. 3. 4. 5.]</span><br><span class="line">[1.  1.8 2.6 3.4 4.2]</span><br><span class="line">[1.  2.  3.  4.  5.  1.  1.8 2.6 3.4 4.2]</span><br></pre></td></tr></table></figure>
+
+<h3 id="从字节流中创建ndarray数组。"><a href="#从字节流中创建ndarray数组。" class="headerlink" title="从字节流中创建ndarray数组。"></a>从字节流中创建ndarray数组。</h3><h3 id="从文件中读取特定格式，创建ndarray数组。"><a href="#从文件中读取特定格式，创建ndarray数组。" class="headerlink" title="从文件中读取特定格式，创建ndarray数组。"></a>从文件中读取特定格式，创建ndarray数组。</h3><h2 id="ndarray-数组的变换"><a href="#ndarray-数组的变换" class="headerlink" title="ndarray 数组的变换"></a>ndarray 数组的变换</h2><h3 id="ndarray-数组的维度变换"><a href="#ndarray-数组的维度变换" class="headerlink" title="ndarray 数组的维度变换"></a>ndarray 数组的维度变换</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.reshape(shape)</td>
+<td>不改变数组元素，返回一个shape形状的数组，原数组不变</td>
+</tr>
+<tr>
+<td>.resize(shape)</td>
+<td>与.reshape()功能一致，但修改原数组</td>
+</tr>
+<tr>
+<td>.swapaxes(ax1, ax2)</td>
+<td>将数组n个维度中的两个维度进行调换</td>
+</tr>
+<tr>
+<td>.flatten()</td>
+<td>对数组降维，返回一维数组，原数组不变</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.ones((2,3))</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[[1. 1. 1.]</span><br><span class="line">[1. 1. 1.]]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; a.reshape(3,2)</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[[1. 1. 1.]</span><br><span class="line">[1. 1. 1.]]</span><br><span class="line">[[1. 1.]</span><br><span class="line">[1. 1.]</span><br><span class="line">[1. 1.]]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">c &#x3D; a.resize(3,2)</span><br><span class="line">print(a)</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[[1. 1.]</span><br><span class="line">[1. 1.]</span><br><span class="line">[1. 1.]]</span><br><span class="line">None</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new &#x3D; np.ones((2,1,1))</span><br><span class="line">print(new)</span><br><span class="line">d &#x3D; new.swapaxes(0,1)</span><br><span class="line">print(new)</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
+
+<p>[[[1.]]<br> [[1.]]]</p>
+<p>[[[1.]]<br> [[1.]]]</p>
+<p>[[[1.],[1.]]]</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new &#x3D; np.ones((3,3))</span><br><span class="line">print(new)</span><br><span class="line">e &#x3D; a.flatten()</span><br><span class="line">print(new)</span><br><span class="line">print(e)</span><br></pre></td></tr></table></figure>
+
+<p>[[1. 1. 1.]<br>[1. 1. 1.]<br>[1. 1. 1.]]</p>
+<p>[[1. 1. 1.]<br>[1. 1. 1.]<br>[1. 1. 1.]]</p>
+<p>[1. 1. 1. 1. 1. 1.]</p>
+<h3 id="ndarray-数组的类型变换"><a href="#ndarray-数组的类型变换" class="headerlink" title="ndarray 数组的类型变换"></a>ndarray 数组的类型变换</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>new = old.astype(np.type)</td>
+<td>old类型按type类型转换为new类型</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.ones((3,3),dtype&#x3D;int)</span><br><span class="line">a.dtype</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">45 </span><br><span class="line">	</span><br><span class="line">		dtype(&#39;int64&#39;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; a.astype(np.float)</span><br><span class="line">b.dtype</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">47 </span><br><span class="line">	</span><br><span class="line">		dtype(&#39;float64&#39;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="ndarray-数组转换为列表"><a href="#ndarray-数组转换为列表" class="headerlink" title="ndarray 数组转换为列表"></a>ndarray 数组转换为列表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.ones((3,3))</span><br><span class="line">b &#x3D; a.tolist()</span><br><span class="line"></span><br><span class="line">print(b)</span><br><span class="line">type(b)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[[1.0, 1.0, 1.0], [1.0, 1.0, 1.0], [1.0, 1.0, 1.0]]</span><br><span class="line">list</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组的索引和切片"><a href="#数组的索引和切片" class="headerlink" title="数组的索引和切片"></a>数组的索引和切片</h2><blockquote>
+<p>索引：获取数组中特定位置元素的过程<br>切片：获取数组中元素子集的过程</p>
+</blockquote>
+<h3 id="一维数组的索引和切片"><a href="#一维数组的索引和切片" class="headerlink" title="一维数组的索引和切片"></a>一维数组的索引和切片</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(10)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一维数组的索引</span><br><span class="line">a[1]</span><br><span class="line"></span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一维数组的切片</span><br><span class="line">a[1:6]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([1, 2, 3, 4, 5])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 步长为2</span><br><span class="line">a[1:6:2]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([1, 3, 5])</span><br></pre></td></tr></table></figure>
+
+<h3 id="多维数组的索引和切片"><a href="#多维数组的索引和切片" class="headerlink" title="多维数组的索引和切片"></a>多维数组的索引和切片</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(0,27).reshape((3,3,3))</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[ 0,  1,  2],</span><br><span class="line">	[ 3,  4,  5],</span><br><span class="line">	[ 6,  7,  8]],</span><br><span class="line"></span><br><span class="line">	[[ 9, 10, 11],</span><br><span class="line">	[12, 13, 14],</span><br><span class="line">	[15, 16, 17]],</span><br><span class="line"></span><br><span class="line">	[[18, 19, 20],</span><br><span class="line">	[21, 22, 23],</span><br><span class="line">	[24, 25, 26]]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 多维数组的索引</span><br><span class="line">a[1,:,1]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([10, 13, 16])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a[:,1,:]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 3,  4,  5],</span><br><span class="line">	[12, 13, 14],</span><br><span class="line">	[21, 22, 23]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 多维数组的切片</span><br><span class="line">a[1,0:3:2,0:3:2]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 9, 11],</span><br><span class="line">	[15, 17]])</span><br></pre></td></tr></table></figure>
+
+<h2 id="ndarray-数组的运算"><a href="#ndarray-数组的运算" class="headerlink" title="ndarray 数组的运算"></a>ndarray 数组的运算</h2><h3 id="数组与标量之间的运算"><a href="#数组与标量之间的运算" class="headerlink" title="数组与标量之间的运算"></a>数组与标量之间的运算</h3><p>数组中的每一个元素与标量之间的运算</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange((18)).reshape(2,3,3)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[ 0,  1,  2],</span><br><span class="line">	[ 3,  4,  5],</span><br><span class="line">	[ 6,  7,  8]],</span><br><span class="line"></span><br><span class="line">	[[ 9, 10, 11],</span><br><span class="line">	[12, 13, 14],</span><br><span class="line">	[15, 16, 17]]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; a + 1</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[ 1,  2,  3],</span><br><span class="line">	[ 4,  5,  6],</span><br><span class="line">	[ 7,  8,  9]],</span><br><span class="line"></span><br><span class="line">	[[10, 11, 12],</span><br><span class="line">	[13, 14, 15],</span><br><span class="line">	[16, 17, 18]]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">c &#x3D; (a + 1) * 2</span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[ 2,  4,  6],</span><br><span class="line">	[ 8, 10, 12],</span><br><span class="line">	[14, 16, 18]],</span><br><span class="line"></span><br><span class="line">	[[20, 22, 24],</span><br><span class="line">	[26, 28, 30],</span><br><span class="line">	[32, 34, 36]]])</span><br></pre></td></tr></table></figure>
+
+<h3 id="NumPy-一元函数"><a href="#NumPy-一元函数" class="headerlink" title="NumPy 一元函数"></a>NumPy 一元函数</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>np.abs(),np.fabs()</td>
+<td>计算数组各元素的绝对值</td>
+</tr>
+<tr>
+<td>np.sqrt()</td>
+<td>计算数组各元素的平方根</td>
+</tr>
+<tr>
+<td>np.square()</td>
+<td>计算数组各元素的平方</td>
+</tr>
+<tr>
+<td>np.log(),np.log10(),np.log2()</td>
+<td>*</td>
+</tr>
+<tr>
+<td>np.ceil(),np.floor()</td>
+<td>计算数组各元素的ceiling值或floor值</td>
+</tr>
+<tr>
+<td>…….</td>
+<td>……</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange((18)).reshape(2,3,3)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[ 0,  1,  2],</span><br><span class="line">	[ 3,  4,  5],</span><br><span class="line">	[ 6,  7,  8]],</span><br><span class="line"></span><br><span class="line">	[[ 9, 10, 11],</span><br><span class="line">	[12, 13, 14],</span><br><span class="line">	[15, 16, 17]]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.sqrt(a)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[0.        , 1.        , 1.41421356],</span><br><span class="line">	[1.73205081, 2.        , 2.23606798],</span><br><span class="line">	[2.44948974, 2.64575131, 2.82842712]],</span><br><span class="line"></span><br><span class="line">	[[3.        , 3.16227766, 3.31662479],</span><br><span class="line">	[3.46410162, 3.60555128, 3.74165739],</span><br><span class="line">	[3.87298335, 4.        , 4.12310563]]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.square(a)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[[  0,   1,   4],</span><br><span class="line">	[  9,  16,  25],</span><br><span class="line">	[ 36,  49,  64]],</span><br><span class="line"></span><br><span class="line">	[[ 81, 100, 121],</span><br><span class="line">	[144, 169, 196],</span><br><span class="line">	[225, 256, 289]]])</span><br></pre></td></tr></table></figure>
+
+<h3 id="NumPy-二元函数"><a href="#NumPy-二元函数" class="headerlink" title="NumPy 二元函数"></a>NumPy 二元函数</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+, -, <em>, /, *</em></td>
+<td>两个数组各元素进行对应运算</td>
+</tr>
+<tr>
+<td>np.maximum(x,x),np.fmax()</td>
+<td>…</td>
+</tr>
+<tr>
+<td>np.minimum(x,x),np.fmin()</td>
+<td>…</td>
+</tr>
+<tr>
+<td>np.mod(x,y)</td>
+<td>…</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 初始化 a</span><br><span class="line">a &#x3D; np.arange(4) + 1</span><br><span class="line">a &#x3D; a.reshape((2,2))</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[1, 2],</span><br><span class="line">	[3, 4]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 初始化 b</span><br><span class="line">b &#x3D; a + 1</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[2, 3],</span><br><span class="line">	[4, 5]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 数组相加</span><br><span class="line">c &#x3D; a + b</span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[3, 5],</span><br><span class="line">	[7, 9]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 数组相乘</span><br><span class="line">d &#x3D; a * b</span><br><span class="line">d</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 2,  6],</span><br><span class="line">	[12, 20]])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 两个数组间的最大值</span><br><span class="line">np.maximum(a,b)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[2, 3],</span><br><span class="line">	[4, 5]])</span><br></pre></td></tr></table></figure>
+
+<h2 id="NumPy-文件的读取和保存"><a href="#NumPy-文件的读取和保存" class="headerlink" title="NumPy 文件的读取和保存"></a>NumPy 文件的读取和保存</h2><h3 id="一维和二维数据的读取"><a href="#一维和二维数据的读取" class="headerlink" title="一维和二维数据的读取"></a>一维和二维数据的读取</h3><blockquote>
+<p><strong>np.savetxt(frame,array,fmt=’%.18e’,delimiter=None)</strong>    </p>
+<blockquote>
+<ul>
+<li>frame: 文件、字符串或产生器(例如: txt和csv格式文件)，可以是 .gz 或 .bz2 的压缩文件</li>
+<li>array: 存入数组</li>
+<li>fmt: 写入文件的格式，例如: %d,%.2,f%.18e</li>
+<li>delimiter: 分割字符串，默认是任何空格</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>np.loadtxt(frame, dtype=np.float, delimiter=None, unpack=False)</strong>    </p>
+<blockquote>
+<ul>
+<li>unpack: 如果True，读取属性将分别写入不同变量</li>
+</ul>
+</blockquote>
+</blockquote>
+<hr>
+<p><em>注意: 这两个函数只能读取和保存一二维的数据。</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(50).reshape((5,10))</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">	[10, 11, 12, 13, 14, 15, 16, 17, 18, 19],</span><br><span class="line">	[20, 21, 22, 23, 24, 25, 26, 27, 28, 29],</span><br><span class="line">	[30, 31, 32, 33, 34, 35, 36, 37, 38, 39],</span><br><span class="line">	[40, 41, 42, 43, 44, 45, 46, 47, 48, 49]])</span><br></pre></td></tr></table></figure>
+
+<h4 id="保存和读取txt文件"><a href="#保存和读取txt文件" class="headerlink" title="保存和读取txt文件"></a>保存和读取txt文件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.savetxt(&#39;a.txt&#39;,a,&#39;%d&#39;,delimiter&#x3D;&#39;,&#39;)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.loadtxt(&#39;a.txt&#39;,dtype&#x3D;np.int,delimiter&#x3D;&#39;,&#39;)</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">	[10, 11, 12, 13, 14, 15, 16, 17, 18, 19],</span><br><span class="line">	[20, 21, 22, 23, 24, 25, 26, 27, 28, 29],</span><br><span class="line">	[30, 31, 32, 33, 34, 35, 36, 37, 38, 39],</span><br><span class="line">	[40, 41, 42, 43, 44, 45, 46, 47, 48, 49]])</span><br></pre></td></tr></table></figure>
+
+<h4 id="保存和读取csv文件"><a href="#保存和读取csv文件" class="headerlink" title="保存和读取csv文件"></a>保存和读取csv文件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.savetxt(&#39;a.csv&#39;,a,&#39;%d&#39;,delimiter&#x3D;&#39;,&#39;)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.loadtxt(&#39;a.csv&#39;,dtype&#x3D;np.int,delimiter&#x3D;&#39;,&#39;)</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">	[10, 11, 12, 13, 14, 15, 16, 17, 18, 19],</span><br><span class="line">	[20, 21, 22, 23, 24, 25, 26, 27, 28, 29],</span><br><span class="line">	[30, 31, 32, 33, 34, 35, 36, 37, 38, 39],</span><br><span class="line">	[40, 41, 42, 43, 44, 45, 46, 47, 48, 49]])</span><br></pre></td></tr></table></figure>
+
+<h3 id="多维数据的读取和保存"><a href="#多维数据的读取和保存" class="headerlink" title="多维数据的读取和保存"></a>多维数据的读取和保存</h3><p>&lt;fkrFB_ArOjhA</p>
+<p> <strong>np.save(fname, array) 或 np.save(fname, array)</strong>   </p>
+<ul>
+<li><p>frame:文件名，以 <code>.npy</code> 为扩展名，压缩扩展名为 <code>.npz</code></p>
+</li>
+<li><p>array:数组变量</p>
+</li>
+<li><p><em>np.load(fname) | 读取函数*</em></p>
+</li>
+</ul>
+<p><em>缺点：文件的格式单一，通用性不强</em></p>
+<hr>
+<p> <strong>np.tofile(frame, sep=’’, format=’%s’)</strong></p>
+<ul>
+<li><p>frame: 文件、字符串</p>
+</li>
+<li><p>sep: 数据分割字符串，如果是空串，写入文件为二进制</p>
+</li>
+<li><p>format: 写入数据的格式</p>
+</li>
+<li><p><em>np.fromfile(frame,dtype=float,count=-1, sep=’’)*</em></p>
+</li>
+<li><p>frame: 文件、字符串</p>
+</li>
+<li><p>dtype: 读取的数据类型</p>
+</li>
+<li><p>count: 读入元素个数，-1表示读入整个文件</p>
+</li>
+<li><p>sep: 数据分割字符串，如果是空串，写入文件为二进制</p>
+</li>
+</ul>
+<p><em>缺点：读取数据时需要知道数据的格式，或者单独保存文件的格式</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">m &#x3D; np.arange(30).reshape((3,10))</span><br><span class="line">m</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">	[10, 11, 12, 13, 14, 15, 16, 17, 18, 19],</span><br><span class="line">	[20, 21, 22, 23, 24, 25, 26, 27, 28, 29]])</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用save和load函数"><a href="#使用save和load函数" class="headerlink" title="使用save和load函数"></a>使用save和load函数</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">savefile &#x3D; np.save(&#39;m.npy&#39;,m)</span><br><span class="line">np.load(&#39;m.npy&#39;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">	[10, 11, 12, 13, 14, 15, 16, 17, 18, 19],</span><br><span class="line">	[20, 21, 22, 23, 24, 25, 26, 27, 28, 29]])</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用tofile和fromfile函数"><a href="#使用tofile和fromfile函数" class="headerlink" title="使用tofile和fromfile函数"></a>使用tofile和fromfile函数</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">savefile &#x3D; m.tofile(&#39;m.dat&#39;,sep&#x3D;&#39;,&#39;, format&#x3D;&#39;%.2f&#39;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.fromfile(&#39;m.dat&#39;,dtype&#x3D;float,count&#x3D;-1,sep&#x3D;&#39;,&#39;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10., 11., 12.,</span><br><span class="line">	13., 14., 15., 16., 17., 18., 19., 20., 21., 22., 23., 24., 25.,</span><br><span class="line">	26., 27., 28., 29.])</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.fromfile(&#39;m.dat&#39;,dtype&#x3D;float,count&#x3D;-1,sep&#x3D;&#39;,&#39;).reshape(3,10)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">array([[ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9.],</span><br><span class="line">	[10., 11., 12., 13., 14., 15., 16., 17., 18., 19.],</span><br><span class="line">	[20., 21., 22., 23., 24., 25., 26., 27., 28., 29.]])</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="NumPy-的随机数函数"><a href="#NumPy-的随机数函数" class="headerlink" title="NumPy 的随机数函数"></a>NumPy 的随机数函数</h2><p>Python 和 NumPy 都具有生成随机数的函数库，Python的random库主要为一般的标量功能提供随机数服务，NumPy 的random库主要为数组类型提供随机数的服务。</p>
+<h3 id="np-random-的随机数函数-1"><a href="#np-random-的随机数函数-1" class="headerlink" title="np.random 的随机数函数(1)"></a>np.random 的随机数函数(1)</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rand(d0,d1,…,dn)</td>
+<td>根据 d0-dn 创建随机数组，浮点数，[0,1]，均匀分布</td>
+</tr>
+<tr>
+<td>randn(d0,d1,…,dn)</td>
+<td>根据 d0-dn 创建随机数组，标准正态分布</td>
+</tr>
+<tr>
+<td>randint(low[,high,shape])</td>
+<td>根据 shape 创建随机数或随机数组，范围是 [high,shape]</td>
+</tr>
+<tr>
+<td>seed(s)</td>
+<td>随机数种子，s 是给定的种子值</td>
+</tr>
+</tbody></table>
+<p><strong>rand()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.random.rand(2,3,3)</span><br></pre></td></tr></table></figure>
+
+<p>array([[[8.94497830e-01, 2.34801201e-01, 1.56375260e-01],<br>                [3.86079509e-01, 6.07716824e-01, 9.76386947e-01],<br>                [9.88833624e-01, 1.87015871e-01, 2.49261652e-01]],</p>
+<pre><code>[[4.38793585e-01, 9.33345192e-01, 3.25477177e-01],
+[9.53108023e-01, 8.44668102e-01, 5.80157668e-01],
+[4.32552565e-04, 5.67461271e-01, 4.84972620e-02]]])</code></pre><p><strong>randn()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.random.randn(3,3,2)</span><br></pre></td></tr></table></figure>
+
+<pre><code>array([[[-0.37790886,  0.6395278 ],
+            [-0.24616262,  2.74511575],
+            [ 0.16196892,  1.29811646]],
+
+            [[-0.00515758,  1.18005635],
+            [-1.08420337, -0.2720978 ],
+            [-1.74630337,  0.30978125]],
+
+            [[ 1.09349392,  1.50483826],
+            [-2.11818328, -0.60798799],
+            [ 0.15658639, -1.62635444]]])</code></pre><p><strong>randint()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">c &#x3D; np.random.randint(1,3,5)</span><br></pre></td></tr></table></figure>
+
+<p>array([2, 1, 2, 2, 2])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">d &#x3D; np.random.randint(3,8,[3,4])</span><br></pre></td></tr></table></figure>
+
+<p>array([[7, 7, 5, 5],<br>                [6, 3, 3, 4],<br>                [5, 4, 4, 6]])</p>
+<p><strong>seed()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 指定随机数种子，两次生成的随机数相同</span><br><span class="line">np.random.seed(8)</span><br><span class="line">e &#x3D; np.random.randint(1,5,(2,3))</span><br><span class="line">e</span><br></pre></td></tr></table></figure>
+
+<p>array([[4, 1, 2],<br>                [2, 2, 3]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.random.seed(8)</span><br><span class="line">f &#x3D; np.random.randint(1,5,(2,3))</span><br><span class="line">f</span><br></pre></td></tr></table></figure>
+
+<p>array([[4, 1, 2],<br>                [2, 2, 3]])</p>
+<h3 id="np-random-的随机数函数-2"><a href="#np-random-的随机数函数-2" class="headerlink" title="np.random 的随机数函数(2)"></a>np.random 的随机数函数(2)</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>shuffle(a)</td>
+<td>根据数组a的第一轴进行随机排列，原数组改变</td>
+</tr>
+<tr>
+<td>permutation(a)</td>
+<td>功能同shuffle(a)，但是原数组不变，产生新的数组</td>
+</tr>
+<tr>
+<td>choice(a,size,replace,p)</td>
+<td>从数组a中，以概率P抽取size形状的数组，relpace默认True，表示数组a中元素可重用</td>
+</tr>
+</tbody></table>
+<p><strong>shuffle()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(15).reshape(3,5)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 0,  1,  2,  3,  4],<br>                [ 5,  6,  7,  8,  9],<br>                [10, 11, 12, 13, 14]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.random.shuffle(a)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[10, 11, 12, 13, 14],<br>                [ 5,  6,  7,  8,  9],<br>                [ 0,  1,  2,  3,  4]])</p>
+<p><strong>permutation()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.eye(3)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[1., 0., 0.],<br>                [0., 1., 0.],<br>                [0., 0., 1.]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.random.permutation(a)</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<p>array([[0., 0., 1.],<br>                [1., 0., 0.],<br>                [0., 1., 0.]])</p>
+<p><strong>choice</strong>()函数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(15)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.random.choice(a,(3,5))</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 1,  3, 10, 11, 12],<br>                [13,  9, 13, 13,  2],<br>                [11,  2, 14,  6, 13]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">c &#x3D; np.random.choice(a,(3,5),replace&#x3D;False)</span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 0, 13, 14, 11,  6],<br>                [ 1,  2, 12,  7, 10],<br>                [ 5,  4,  3,  9,  8]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">d &#x3D; np.random.choice(a,(2,3),replace&#x3D;False,p&#x3D;a&#x2F;np.sum(a))</span><br><span class="line">d</span><br></pre></td></tr></table></figure>
+
+<p>array([[14,  8, 10],<br>                [13, 12,  3]])</p>
+<h2 id="NumPy-的统计函数"><a href="#NumPy-的统计函数" class="headerlink" title="NumPy 的统计函数"></a>NumPy 的统计函数</h2><h3 id="np-random-的统计函数-1"><a href="#np-random-的统计函数-1" class="headerlink" title="np.random 的统计函数(1)"></a>np.random 的统计函数(1)</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>uniform(low,high,size)</td>
+<td>产生具有均匀分布的数组，low起始值，high结束值，size形状</td>
+</tr>
+<tr>
+<td>mormal(loc,scale,size)</td>
+<td>产生具有正态分布的数组，loc均值，scale标准差，size形状</td>
+</tr>
+<tr>
+<td>poisson(lam,size)</td>
+<td>产生具有泊(bo)松分布的数组，lam随机事件发生率, size形状</td>
+</tr>
+</tbody></table>
+<p><strong>uniform(), mormal(), poisson()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.random.uniform(0,1,5)</span><br></pre></td></tr></table></figure>
+
+<p>array([0.60364448, 0.79557456, 0.03200816, 0.45544782, 0.79017254])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.random.normal(loc&#x3D;3,scale&#x3D;2.5,size&#x3D;(2,5))</span><br></pre></td></tr></table></figure>
+
+<p>array([[3.07816078, 3.45482397, 2.84267818, 1.64607885, 4.18629604],<br>                [0.08852207, 1.74772652, 1.9785976 , 0.66412911, 3.21127539]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.random.poisson(lam&#x3D;1,size&#x3D;5)</span><br></pre></td></tr></table></figure>
+
+<p>array([3, 2, 1, 0, 1])</p>
+<h3 id="np-random-的统计函数-2"><a href="#np-random-的统计函数-2" class="headerlink" title="np.random 的统计函数(2)"></a>np.random 的统计函数(2)</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sum(a,axis=None)</td>
+<td>按轴axis的方向对数组a求和，axis整数或元组</td>
+</tr>
+<tr>
+<td>mean(a,axis=None)</td>
+<td>求期望</td>
+</tr>
+<tr>
+<td>average(a,axis=None,weights=None)</td>
+<td>求加权平均值，weight权重</td>
+</tr>
+<tr>
+<td>std(a,axis=None)</td>
+<td>求标准差</td>
+</tr>
+<tr>
+<td>var(a,axis=None)</td>
+<td>求方差</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 1,  2,  3,  4],<br>                [ 5,  6,  7,  8],<br>                [ 9, 10, 11, 12]])</p>
+<p><strong>sum()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.sum(a)</span><br></pre></td></tr></table></figure>
+
+<p>78</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.sum(a,axis&#x3D;0)</span><br></pre></td></tr></table></figure>
+
+<p>array([15, 18, 21, 24])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.sum(a,axis&#x3D;1)</span><br></pre></td></tr></table></figure>
+
+<p>array([10, 26, 42])</p>
+<p><strong>mean()和average()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(12).reshape(3,4)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 0,  1,  2,  3],<br>    [ 4,  5,  6,  7],<br>    [ 8,  9, 10, 11]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(a)</span><br></pre></td></tr></table></figure>
+
+<p>5.5</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(a,axis&#x3D;1)</span><br></pre></td></tr></table></figure>
+
+<p>array([1.5, 5.5, 9.5])</p>
+<p><strong>std()和var()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(12).reshape(3,4)</span><br><span class="line"></span><br><span class="line">np.std(a)</span><br></pre></td></tr></table></figure>
+
+<p>3.452052529534663</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.var(a)</span><br></pre></td></tr></table></figure>
+
+<p>11.916666666666666</p>
+<h3 id="np-random-的统计函数-3"><a href="#np-random-的统计函数-3" class="headerlink" title="np.random 的统计函数(3)"></a>np.random 的统计函数(3)</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>min(a), max(a)</td>
+<td>计算数组a中的最值</td>
+</tr>
+<tr>
+<td>argmin(a), argmax(a)</td>
+<td>计算数组a中的最值降一维后的下标</td>
+</tr>
+<tr>
+<td>unravel_index(index, shape)</td>
+<td>按照shape将index转换为多维下标</td>
+</tr>
+<tr>
+<td>pip(a)</td>
+<td>计算数组a中最大值和最小值的差</td>
+</tr>
+<tr>
+<td>median(a)</td>
+<td>计算数组a中的中位数</td>
+</tr>
+</tbody></table>
+<p>测试数组a</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.arange(15,0,-1).reshape(3,5)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([[15, 14, 13, 12, 11],<br>                [10,  9,  8,  7,  6],<br>                [ 5,  4,  3,  2,  1]])</p>
+<p><strong>min(),max(),argmin(),argmax(),unrevel_index()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.min(a)</span><br></pre></td></tr></table></figure>
+
+<p>1</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.max(a)</span><br></pre></td></tr></table></figure>
+
+<p>15</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.argmin(a)</span><br></pre></td></tr></table></figure>
+
+<p>14</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.argmax(a)</span><br></pre></td></tr></table></figure>
+
+<p>0</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.unravel_index(np.argmin(a),a.shape)</span><br></pre></td></tr></table></figure>
+
+<p>(2, 4)</p>
+<p><strong>pip(),median()函数</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.ptp(a)</span><br></pre></td></tr></table></figure>
+
+<p>14</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.median(a)</span><br></pre></td></tr></table></figure>
+
+<p>8.0</p>
+<h2 id="NumPy-的梯度函数"><a href="#NumPy-的梯度函数" class="headerlink" title="NumPy 的梯度函数"></a>NumPy 的梯度函数</h2><h3 id="np-random的梯度函数"><a href="#np-random的梯度函数" class="headerlink" title="np.random的梯度函数"></a>np.random的梯度函数</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>np.gradient(f)</td>
+<td>计算数组f中元素的梯度，当f为多维时，返回每个维度的梯度</td>
+</tr>
+</tbody></table>
+<p><strong>gradient</strong>()函数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#x3D; np.random.randint(1,5,5)</span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+
+<p>array([1, 1, 1, 3, 4])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.gradient(a)</span><br></pre></td></tr></table></figure>
+
+<p>array([0. , 0. , 1. , 1.5, 1. ])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">b &#x3D; np.random.randint(1,12,12).reshape(3,4)</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+
+<p>array([[ 9,  2,  1,  9],<br>    [10,  6, 11,  3],<br>    [ 3,  3,  8,  8]])</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.gradient(b)</span><br></pre></td></tr></table></figure>
+
+<p>[array([[ 1. ,  4. , 10. , -6. ],<br>    [-3. ,  0.5,  3.5, -0.5],<br>    [-7. , -3. , -3. ,  5. ]]), array([[-7. , -4. ,  3.5,  8. ],<br>    [-4. ,  0.5, -1.5, -8. ],<br>    [ 0. ,  2.5,  2.5,  0. ]])]</p>
+]]></content>
+      <categories>
+        <category>科学计算与可视化</category>
+      </categories>
+      <tags>
+        <tag>NumPy</tag>
+        <tag>科学计算</tag>
+      </tags>
+  </entry>
 </search>
