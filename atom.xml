@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-15T05:42:02.746Z</updated>
+  <updated>2020-05-15T10:23:15.365Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NumPy实现手绘图像效果</title>
+    <link href="http://yoursite.com/NumPy%E5%AE%9E%E7%8E%B0%E6%89%8B%E7%BB%98%E5%9B%BE%E5%83%8F%E6%95%88%E6%9E%9C/"/>
+    <id>http://yoursite.com/NumPy%E5%AE%9E%E7%8E%B0%E6%89%8B%E7%BB%98%E5%9B%BE%E5%83%8F%E6%95%88%E6%9E%9C/</id>
+    <published>2020-05-15T09:56:52.000Z</published>
+    <updated>2020-05-15T10:23:15.365Z</updated>
+    
+    <summary type="html">
+    
+      NumPy学习笔记
+    
+    </summary>
+    
+    
+      <category term="科学计算与可视化" scheme="http://yoursite.com/categories/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="NumPy" scheme="http://yoursite.com/tags/NumPy/"/>
+    
+  </entry>
   
   <entry>
     <title>Python数据分析之 NumPy</title>
