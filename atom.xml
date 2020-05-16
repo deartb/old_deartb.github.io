@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-15T10:23:15.365Z</updated>
+  <updated>2020-05-16T04:59:36.735Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>NumPy实现手绘图像效果</title>
+    <title>matplotlib 入门</title>
+    <link href="http://yoursite.com/matplotlib-%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/matplotlib-%E5%85%A5%E9%97%A8/</id>
+    <published>2020-05-16T04:35:10.000Z</published>
+    <updated>2020-05-16T04:59:36.735Z</updated>
+    
+    <summary type="html">
+    
+      matplotlib 学习笔记
+    
+    </summary>
+    
+    
+      <category term="科学计算与可视化" scheme="http://yoursite.com/categories/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="matplotlib" scheme="http://yoursite.com/tags/matplotlib/"/>
+    
+      <category term="数据可视化" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NumPy 实现手绘图像效果</title>
     <link href="http://yoursite.com/NumPy%E5%AE%9E%E7%8E%B0%E6%89%8B%E7%BB%98%E5%9B%BE%E5%83%8F%E6%95%88%E6%9E%9C/"/>
     <id>http://yoursite.com/NumPy%E5%AE%9E%E7%8E%B0%E6%89%8B%E7%BB%98%E5%9B%BE%E5%83%8F%E6%95%88%E6%9E%9C/</id>
     <published>2020-05-15T09:56:52.000Z</published>
-    <updated>2020-05-15T10:23:15.365Z</updated>
+    <updated>2020-05-16T04:38:54.492Z</updated>
     
     <summary type="html">
     
@@ -34,6 +57,8 @@
     
     
       <category term="NumPy" scheme="http://yoursite.com/tags/NumPy/"/>
+    
+      <category term="科学计算" scheme="http://yoursite.com/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -92,7 +117,7 @@
     <link href="http://yoursite.com/%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
     <id>http://yoursite.com/%E6%94%B6%E8%97%8F%E5%A4%B9/</id>
     <published>2020-05-13T11:42:46.000Z</published>
-    <updated>2020-05-13T15:32:12.358Z</updated>
+    <updated>2020-05-15T14:03:09.731Z</updated>
     
     <summary type="html">
     
