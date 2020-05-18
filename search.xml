@@ -4,7 +4,7 @@
     <title>Pandas 入门</title>
     <url>/Pandas-%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h2 id="Pandas的Series类型"><a href="#Pandas的Series类型" class="headerlink" title="Pandas的Series类型"></a>Pandas的Series类型</h2><h3 id="走近Series类型"><a href="#走近Series类型" class="headerlink" title="走近Series类型"></a>走近Series类型</h3><p>自动索引</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import pandas as p</span><br><span class="line">pd.Series([0,1,2,3,4,5])</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import pandas as pd</span><br><span class="line">pd.Series([0,1,2,3,4,5])</span><br></pre></td></tr></table></figure>
 
 <p>0    0<br>1    1<br>2    2<br>3    3<br>4    4<br>5    5<br>dtype: int64</p>
 <p>指定索引</p>
